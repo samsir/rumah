@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  
+  {% include head.html %}
+  
+<body class="404">
+
+{% for entry in site.data.navigation %}
+{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+    {% if fullurl == page.url %}
+        {% assign current_page = fullurl %}
+        {% break %}
+    {% elsif page.url contains fullurl %}
+        {% assign current_page = fullurl %}
+    {% endif %}
+{% endfor %}
+
+<nav class="navbar position-fixed draggable">
+<div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="javascript:void(0)" role="button" id="menuBar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="menuBar">
+    {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+            {% assign current = 'nav-item' %}
+        {% else %}
+            <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+            {% assign current = null %}
+        {% endif %}
+        {% assign sublinks = entry.sublinks %}
+        {% if sublinks %}
+        <li class="dropdown multi-menu {{ current }}">
+            <a class="dropdown-item dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
+            <div class="dropdown-menu sub-menu">
+                {% for sublink in sublinks %}
+                  <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                {% endfor %}
+            </div>
+        </li>
+        {% else %}
+        <li class="{{ current }}">
+          <a class="dropdown-item" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+</nav>
+<!-- /.navbar -->
+  
+<script>
+function dragMoveListener(a){var b=a.target,c=(parseFloat(b.getAttribute("data-x"))||0)+a.dx;a=(parseFloat(b.getAttribute("data-y"))||0)+a.dy;b.style.webkitTransform=b.style.transform="translate("+c+"px, "+a+"px)";b.setAttribute("data-x",c);b.setAttribute("data-y",a)}interact(".draggable").draggable({restrict:{restriction:"parent",elementRect:{top:0,left:0,bottom:1,right:1}},autoScroll:!0,onmove:dragMoveListener})
+</script>
+  
+  {% include header.html %}
+
+  
+<section class="container py-5 centering">
+   <main class="row">
+      <article class="col-md-8 mx-auto pb-5">
+      
+      {{ content }}
+              
+      </article>
+    </main>
+    <!-- /.row -->
+</section>
+<!-- /.container -->
+  
+  {% include footer.html %}
+
+</body>
+
+</html>

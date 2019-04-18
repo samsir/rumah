@@ -1,0 +1,60 @@
+# You can define your custom social network links here.
+# In addition to that you need to specify the following properties:
+#   name: Specify a user-friendly name that will be used as a link title
+#            site.socials-links.<key>
+#   icon: Specify a valid fontawesome icon class
+
+email:
+  name: "Email me"
+  baseURL: "mailto:"
+  icon: "fas fa-envelope"
+
+facebook:
+  name: "Facebook"
+  baseURL: "https://www.facebook.com/"
+  icon: "fa-facebook"
+
+github:
+  name: "GitHub"
+  baseURL: "https://github.com/"
+  icon: "fa-github"
+
+instagram:
+  name: "Instagram"
+  baseURL: "https://www.instagram.com/"
+  icon: "fa-instagram"
+
+linkedin:
+  name: "LinkedIn"
+  baseURL: "https://linkedin.com/in/"
+  icon: "fa-linkedin"
+
+medium:
+  name: "Medium"
+  baseURL: "https://medium.com/"
+  icon: "fa-medium"
+
+rss:
+  name: "RSS"
+  baseURL: "{{ '/feed.xml' | prepend: site.baseurl }}"
+  icon: "fa-rss"
+
+telephone:
+  name: "Phone"
+  baseURL: "tel:"
+  icon: "fa-phone"
+
+twitter:
+  name: "Twitter"
+  baseURL: "https://twitter.com/"
+  icon: "fa-twitter"
+  
+yelp:
+  name: "Yelp"
+  baseURL: "https://{{ site.author.yelp }}.yelp.com"
+  icon: "fa-yelp"
+  
+youtube:
+  name: "YouTube"
+  baseURL: "https://www.youtube.com/"
+  icon: "fa-youtube"

@@ -1,0 +1,92 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Samsir
+tagline: samsiralam.com
+email: # "samsiralam666@gmail.com"
+description: >- # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://samsiralam.com" # the base hostname & protocol for your site
+author:
+name: Samsir
+ 
+# If you want to have an image logo in the top-left corner instead of the title text,
+# then specify the following parameter
+logo: /assets/images/samsiralamcom.svg
+
+# Select your active Socials Links.
+# Uncomment the links you want to show in the footer and add your information to each link.
+# You can reorder the items to define the link order.
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/socials.yml
+socials-links:
+#  rss: true
+  email: "samsiralamsamsiralam@gmail.com"
+#  facebook: username
+  github: samsiralam0
+#  google-plus: username
+#  instagram: samsiralam0
+  linkedin: samsiralam
+#  medium: @samsir
+#  reddit: username
+#  stackoverflow: "1234567/username"
+#  snapchat: username
+#  spotify: yourname
+#  steam: username
+#  telephone: +62
+#  twitch: yourname
+#  twitter: samsiralam0
+#  xing: yourname
+#  yelp: yourname
+#  youtube: yourname
+paginate: 5
+
+paginate_path: "/staff/page:num/"
+
+categories: []
+
+excerpt_separator: "<!-- more -->"
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+# Permalinks
+permalink: /staff/:year/:month/:day/:title/
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  highlighter: rouge
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _sass
+  style:     :compressed # You might prefer to minify using expanded
+
+# Set Google Analytics Code
+# google_analytics: UA-42261351-1
+
+# Enter your Disqus shortname (not your username) to enable commenting on posts
+# You can find your shortname on the Settings page of your Disqus account
+disqus:
+
+# Use the following plug-ins
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - LICENSE
+  - README.md
+  - CNAME

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<body class="post">
+
+   <p class="post-meta">{% if page.author %} • <span>{{ page.author }}</span>{% endif %}</p>
+
+      {{ content }}
+                  
+      <div class="date text-muted">
+         Written on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      </div>
+
+   {% include disqus.html %}
+
+</body>
