@@ -15,8 +15,7 @@ url: "http://samsiralam.com" # the base hostname & protocol for your site
 author:
 name: Samsir
  
-# If you want to have an image logo in the top-left corner instead of the title text,
-# then specify the following parameter
+# Site logo
 logo: /assets/images/samsiralamcom.svg
 
 # Select your active Socials Links.
@@ -43,17 +42,13 @@ socials-links:
 #  xing: yourname
 #  yelp: yourname
 #  youtube: yourname
-paginate: 5
 
+# Pagination
+paginate: 5
 paginate_path: "/staff/page:num/"
 
-categories: []
-
+# Excerpt
 excerpt_separator: "<!-- more -->"
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
 
 # Permalinks
 permalink: /staff/:year/:month/:day/:title/
@@ -74,7 +69,6 @@ sass:
 # google_analytics: UA-42261351-1
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
 disqus:
 
 # Use the following plug-ins
