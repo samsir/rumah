@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Linimasa
+title: Timeline
 ---
 
 {% include timeline.html %}
