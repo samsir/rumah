@@ -71,6 +71,9 @@ sass:
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 disqus:
 
+# Chrome tab theme color
+chrome-tab-theme-color: "#14ac6c"
+
 # Use the following plug-ins
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
