@@ -71,7 +71,7 @@ sass:
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 disqus:
 
-# Chrome tab theme color
+# Set Chrome tab theme color
 chrome-tab-theme-color: "#14ac6c"
 
 # Use the following plug-ins
