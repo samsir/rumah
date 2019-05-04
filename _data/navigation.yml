@@ -1,6 +1,6 @@
 # Belongs at: /_data/navigation.yml
 
-# title: Home
+#- title: Home
 #  url: /
 
 - title: Perihal
@@ -9,8 +9,8 @@
 - title: Blog
   url: /blog/
 
-- title: Linimasa
-  url: /timeline/
+#- title: Linimasa
+#  url: /timeline/
 
 #- title: Group
 #  url: /group/
