@@ -7,12 +7,11 @@
 
 # Site settings
 title: Samsir
-tagline: samsiralam.com
-email: # "samsiralam666@gmail.com"
+email: # "samsiralamsamsiralam@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://samsiralam.com" # the base hostname & protocol for your site
-author:
+author: Samsir
 name: Samsir
  
 # Site logo
