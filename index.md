@@ -1,5 +1,6 @@
 ---
 layout: home
+title: samsiral.am
 redirect_to: "http://samsiral.am"
 ---
 
