@@ -1,16 +1,13 @@
 <div id="medium-widget"></div>
 <script src="{{ site.path }}/assets/js/medium-widget.js"></script>
-<script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@samsir","postsPerLine":1,"limit":7,"picture":"small","fields":["description","author","publishAt"],"ratio":"square"}})</script>
-<script>
-  MediumWidget.Init({
+<script>MediumWidget.Init({
     renderTo: '#medium-widget',
     params: {
         "resource": "https://medium.com/@samsir",
         "postsPerLine": 1,
-        "limit": 7,
+        "limit": 4,
         "picture": "small",
-        "fields": ["description", "author", "publishAt"],
+        "fields": ["description", "author", "claps", "publishAt"],
         "ratio": "square"
     }
- })
-</script>
+})</script>
