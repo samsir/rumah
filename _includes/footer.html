@@ -5,11 +5,11 @@
     {%- assign curkey = link[0] -%}
     {%- assign element = site.data.socials[curkey] -%}
     {%- if curkey == 'rss' -%}
-      <a class="mr-1" href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
+      <a class="mr-1 text-decoration-none" href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
     {%- elsif curkey == 'yelp' -%}
-      <a class="mr-1" href="https://{{ site.socials-links[curkey] }}.yelp.com" title="{{ element.name }}">
+      <a class="mr-1 text-decoration-none" href="https://{{ site.socials-links[curkey] }}.yelp.com" title="{{ element.name }}">
     {%- else -%}
-      <a class="mr-1" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
+      <a class="mr-1 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
     {%- endif -%}
         {%- if curkey == 'rss' -%}
         <i class="fas {{ element.icon }}"></i>
