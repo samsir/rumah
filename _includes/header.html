@@ -1,8 +1,8 @@
 <header class="masthead text-center position-absolute">
         {% if site.logo %}
-        <a class="navbar-brand pt-2 m-0" href="{{ site.url }}"><img src="{{ site.logo }}"/></a>
+        <a class="navbar-brand pt-2 m-0" aria-label="samsiral.am" href="{{ site.url }}"><img alt="Brand" src="{{ site.logo }}"/></a>
         {% else %}
-        <a class="navbar-brand pt-2" href="{{ site.url }}"><h1>{{ site.title }}</h1></a>
+        <a class="navbar-brand pt-2" aria-label="samsiral.am" href="{{ site.url }}"><h1>{{ site.title }}</h1></a>
         {% endif %}
 </header>
 <!-- /.masthead -->
