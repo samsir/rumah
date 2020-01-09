@@ -1,6 +1,6 @@
 ---
 layout: home
-title: samsiral.am
+title: SAMSIRALAM.COM
 ---
 
 Seperti nonton konser musik atau film, buat saya ngeblog itu lebih seperti kita yang melakukan, kamu adalah pencipta dan penulis lagu sekaligus pemeran utama dalam khayal dan imajinasi mu yang dihidupkan melalui tulisan.
