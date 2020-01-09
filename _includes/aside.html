@@ -2,8 +2,56 @@
     <div class="py-2 sticky-top flex-grow-1">
          <div class="card">
              <a href="{{ site.url }}"><img class="card-img-top disable-user-select" alt="avatar" src="{{ site.baseurl }}/assets/images/ava.png" alt="{{ site.url }}"></a>
-             {% include navside.html %}
-         </div>
+<div class="accordion" id="accordionNav">
+    <div class="card-header clearfix" id="headingNav">
+        <button class="btn btn-link float-left p-0 ml-1" aria-label="navMenu" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="true" aria-controls="collapseNav">
+        <i class="fas fa-bars"></i>
+        </button>
+        <!-- Social links -->
+        <div class="float-right">
+            {%- for link in site.socials-links -%}
+            {%- assign curkey = link[0] -%}
+            {%- assign element = site.data.socials[curkey] -%}
+            {%- if curkey == 'rss' -%}
+            <a class="mr-1 text-decoration-none" href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
+            {%- elsif curkey == 'yelp' -%}
+            <a class="mr-1 text-decoration-none" href="https://{{ site.socials-links[curkey] }}.yelp.com" title="{{ element.name }}">
+            {%- else -%}
+            <a class="mr-1 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
+            {%- endif -%}
+                {%- if curkey == 'rss' -%}
+                <i class="fas {{ element.icon }}"></i>
+                <span class="sr-only">{{ element.name }}</span>
+                {%- else -%}
+                <i class="fab {{ element.icon }}"></i>
+                <span class="sr-only">{{ element.name }}</span>
+                {%- endif -%}
+            </a>
+            {%- endfor -%}
+        </div>
+    </div>
+
+    <div id="collapseNav" class="collapse" aria-labelledby="headingNav" data-parent="#accordionNav">
+        <nav class="list-group list-group-flush">
+            {% for entry in site.data.navigation %}
+            {% assign sublinks = entry.sublinks %}
+            {% if sublinks %}
+            <div class="dropdown multi-menu">
+                <a class="list-group-item dropdown-toggle text-decoration-none" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
+                <div class="dropdown-menu sub-menu">
+                    {% for sublink in sublinks %}
+                    <a class="dropdown-item text-decoration-none" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
+            <a class="list-group-item text-decoration-none" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+            {% endif %}
+            {% endfor %}
+        </nav>
+    </div>
+</div>
+    </div>
     </div>
 </aside>
 <!-- /.sidebar -->
