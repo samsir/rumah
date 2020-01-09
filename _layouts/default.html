@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   
   {% include head.html %}
   
-<body="def">
-
-  {% include navbar.html %}
+<body>
 
   {% include header.html %}
 
-  
 <section class="container py-5">
     <main class="row">
-      <article class="col-md-8 mx-auto pb-5">
+
+      {% include aside.html %}
+      
+      <article class="col-md-6 pb-5">
       
       {{ content }}
               
@@ -22,8 +22,6 @@
 </section>
 <!-- /.container -->
   
-  {% include footer.html %}
-
 </body>
 
 </html>
