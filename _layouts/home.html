@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   
   {% include head.html %}
   
-<body class="home">
+<body>
 
   {% include header.html %}
 
-  
-<section class="container-fluid py-5">
+<section class="container py-5">
+    <main class="row">
+
+      {% include aside.html %}
+      
+      <article class="col-md-6 pb-5">
       
       {{ content }}
               
+      </article>
+    </main>
     <!-- /.row -->
 </section>
 <!-- /.container -->
