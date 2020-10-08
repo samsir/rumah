@@ -1,11 +1,13 @@
-<article class="col-lg-3 col-sm-5 col-md-4 mx-auto" role="menu">
-         <div class="card card-block">
+<article class="col-lg-6 col-sm-5 col-md-4 mx-auto" role="menu">
+         <div class="card">
+                  <div class="card-header">
+                           <h2>Kartu Tand Netizen</h2>
+                  </div>
+                  <div class="card-body">
+                           <div class="row">
+                                    <div class="col-md-5">
              <a href="{{ site.url }}"><img class="card-img-top disable-user-select" alt="avatar" src="{{ site.baseurl }}/assets/images/ava.png" alt="{{ site.url }}"></a>
-<div class="accordion" id="accordionNav">
-    <div class="card-header clearfix" id="headingNav">
-        <button class="btn btn-link float-left p-0 ml-1" aria-label="navMenu" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="true" aria-controls="collapseNav">
-        <i class="fas fa-bars"></i>
-        </button>
+                                    </div>
         <!-- Social links -->
         <div class="float-right">
             {%- for link in site.socials-links -%}
@@ -28,7 +30,6 @@
             </a>
             {%- endfor -%}
         </div>
-    </div>
 
     <div id="collapseNav" class="collapse" aria-labelledby="headingNav" data-parent="#accordionNav">
         <nav class="list-group list-group-flush">
@@ -50,6 +51,7 @@
         </nav>
     </div>
 </div>
-    </div>
+</div>
+</div>
 </article>
 <!-- /.card -->
