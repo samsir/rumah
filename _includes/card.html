@@ -8,6 +8,8 @@
                                     <div class="col-md-5">
              <a href="{{ site.url }}"><img class="card-img-top disable-user-select" alt="avatar" src="{{ site.baseurl }}/assets/images/ava.png" alt="{{ site.url }}"></a>
                                     </div>
+                                    
+         <div class="col-md-7"
         <!-- Social links -->
         <div class="float-right">
             {%- for link in site.socials-links -%}
@@ -31,7 +33,6 @@
             {%- endfor -%}
         </div>
 
-    <div id="collapseNav" class="collapse" aria-labelledby="headingNav" data-parent="#accordionNav">
         <nav class="list-group list-group-flush">
             {% for entry in site.data.navigation %}
             {% assign sublinks = entry.sublinks %}
@@ -43,13 +44,13 @@
                     <a class="dropdown-item text-decoration-none" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
                     {% endfor %}
                 </div>
-            </div>
             {% else %}
             <a class="list-group-item text-decoration-none" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
             {% endif %}
             {% endfor %}
         </nav>
     </div>
+</div>
 </div>
 </div>
 </div>
