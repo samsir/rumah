@@ -9,9 +9,46 @@
                                              <a href="{{ site.url }}"><img class="img-thumbnail disable-user-select" alt="avatar" src="{{ site.baseurl }}/assets/images/ava.png" alt="{{ site.url }}"></a>
                                     </div>
                                     
-         <div class="col-md-7"
+         <div class="col-md-7">
+<table class="table table-sm">
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">NIN :</th>
+      <td>62.0123456789.1</td>
+    </tr>
+    <tr>
+      <th scope="row">Name :</th>
+      <td>Samsir</td>
+    </tr>
+    <tr>
+      <th scope="row">Links :</th>
+      <td>
+         <!-- Nav links -->
+         <nav class="nav flex-column">
+            {% for entry in site.data.navigation %}
+            {% assign sublinks = entry.sublinks %}
+            {% if sublinks %}
+            <div class="dropdown multi-menu">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
+                <div class="dropdown-menu sub-menu">
+                    {% for sublink in sublinks %}
+                    <a class="dropdown-item text-decoration-none" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                    {% endfor %}
+                </div>
+            {% else %}
+            <a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+            {% endif %}
+            {% endfor %}
+        </nav>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">Social :</th>
+      <td>
         <!-- Social links -->
-        <div class="float-right">
+        <div class="nav">
             {%- for link in site.socials-links -%}
             {%- assign curkey = link[0] -%}
             {%- assign element = site.data.socials[curkey] -%}
@@ -32,24 +69,12 @@
             </a>
             {%- endfor -%}
         </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-        <nav class="nav flex-column">
-            {% for entry in site.data.navigation %}
-            {% assign sublinks = entry.sublinks %}
-            {% if sublinks %}
-            <div class="dropdown multi-menu">
-                <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
-                <div class="dropdown-menu sub-menu">
-                    {% for sublink in sublinks %}
-                    <a class="dropdown-item text-decoration-none" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                    {% endfor %}
-                </div>
-            {% else %}
-            <a class="nav-link" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-            {% endif %}
-            {% endfor %}
-        </nav>
-    </div>
+</div>
 </div>
 </div>
 </div>
