@@ -45,6 +45,7 @@ paginate_path: "/staff/page:num/"
 excerpt_separator: "<!-- more -->"
 
 # Permalinks
+permalink:  pretty
 permalink: /staff/:year/:month/:day/:title/
 
 # Set the Sass partials directory, as we're using @imports
@@ -69,6 +70,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
+collections:
+  posts:
+    permalink: /post/:title/
+    output: true
 
 # Exclude these files from your production _site
 exclude:
