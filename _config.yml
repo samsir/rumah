@@ -5,7 +5,7 @@ title: Samsir
 email: # "samsiralamsamsiralam@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://samsiralam.com" # the base hostname & protocol for your site
+url: "http://samsiral.am" # the base hostname & protocol for your site
 author: Samsir
 name: Samsir
  
@@ -24,7 +24,7 @@ socials-links:
 #  google-plus: username
 #  instagram: samsiral.am
   linkedin: samsiralam
-#  medium: @samsir
+  medium: @samsir
 #  reddit: username
 #  stackoverflow: "1234567/username"
 #  snapchat: username
