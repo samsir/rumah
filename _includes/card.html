@@ -24,29 +24,6 @@
                                                                         <td class="border-0">Samsir</td>
                                                                </tr>
                                                                <tr>
-                                                                        <th scope="row" class="border-0">Links</th>
-                                                                        <td class="border-0">:</td>
-                                                                        <td class="border-0">
-                                                                                 <!-- Nav links -->
-                                                                                 <nav class="nav flex-column">
-                                                                                          {% for entry in site.data.navigation %}
-                                                                                          {% assign sublinks = entry.sublinks %}
-                                                                                          {% if sublinks %}
-                                                                                          <div class="dropdown multi-menu">
-                                                                                                   <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</a>
-                                                                                                   <div class="dropdown-menu sub-menu">
-                                                                                                            {% for sublink in sublinks %}
-                                                                                                            <a class="dropdown-item text-decoration-none" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                                                                                            {% endfor %}
-                                                                                                   </div>
-                                                                                                   {% else %}
-                                                                                                   <a class="nav-link pt-0 pl-0" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-                                                                                                   {% endif %}
-                                                                                                   {% endfor %}
-                                                                                 </nav>
-                                                                        </td>
-                                                               </tr>
-                                                               <tr>
                                                                         <th scope="row" class="border-0">Social</th>
                                                                         <td class="border-0">:</td>
                                                                         <td class="border-0">
