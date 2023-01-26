@@ -37,13 +37,6 @@ socials-links:
 #  yelp: yourname
 #  youtube: yourname
 
-# Pagination
-paginate: 5
-paginate_path: "/staff/page:num/"
-
-# Excerpt
-excerpt_separator: "<!-- more -->"
-
 # Permalinks
 permalink:  pretty
 
@@ -51,12 +44,6 @@ permalink:  pretty
 sass:
   sass_dir: _sass
   style:     :compressed # You might prefer to minify using expanded
-
-# Set Google Analytics Code
-# google_analytics: UA-42261351-1
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-disqus:
 
 # Set Chrome tab theme color
 chrome-tab-theme-color: "#14ac6c"
