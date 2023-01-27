@@ -20,8 +20,11 @@
 html,
 body.home,
 section.container-fluid {
-  font-family: 'PT Sans', sans-serif;
   height: 100%;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
 }
 
 a, a:hover {
