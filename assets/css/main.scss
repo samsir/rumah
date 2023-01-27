@@ -15,11 +15,12 @@
   ;
 
 // Google Fonts
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&family=PT+Sans&display=swap);
 
 html,
 body.home,
 section.container-fluid {
+  font-family: 'PT Sans', sans-serif;
   height: 100%;
 }
 
