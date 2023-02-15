@@ -41,17 +41,6 @@ a, a:hover {
   font-family: 'Actor', sans-serif;
 }
 
-// Main navbar
-.multi-menu:hover .sub-menu {
-  display: block;
-  margin-top: 0;
-}
-
-.draggable {
-  z-index: 1031;
-  touch-action: none;
-}
-
 .disable-user-select {
   user-drag: none; 
   user-select: none;
