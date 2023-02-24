@@ -43,12 +43,6 @@ highlighter: rouge
 # Use the following plug-ins
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
-collections:
-  posts:
-    permalink: /staff/:year/:month/:day/:title/
-    output: true
 
 # Exclude these files from your production _site
 exclude:
