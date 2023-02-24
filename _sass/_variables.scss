@@ -1,2 +1,85 @@
 // Variables
 // ---
+html,
+body.home,
+section.container-fluid {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+a, a:hover {
+  color: #0B653E;
+}
+
+// Header
+.masthead {
+  right: 0;
+  left: 0;
+}
+
+.page-header {
+  font-family: 'Actor', sans-serif;
+}
+
+.disable-user-select {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/*!
+ * font-awesome-animation - v0.0.6
+ * https://github.com/l-lin/font-awesome-animation
+ * License: MIT
+ */
+/* PULSE */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  50% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+  -webkit-animation: pulse 2s linear infinite;
+  animation: pulse 2s linear infinite;
+}
