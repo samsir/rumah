@@ -19,23 +19,12 @@ logo: /assets/images/brand.svg
 socials-links:
 #  rss: true
   email: "samsiralamsamsiralam@gmail.com"
-#  facebook: username
 #  github: samsir
-#  google-plus: username
-#  instagram: samsiral_am
   linkedin: samsiralam
 #  medium: samsir
-#  reddit: username
-#  stackoverflow: "1234567/username"
-#  snapchat: username
   spotify: samsiralam
-#  steam: username
 #  telephone: +62
-#  twitch: yourname
-#  twitter: samsiral_am
-#  xing: yourname
 #  yelp: yourname
-#  youtube: yourname
 
 # Permalinks
 permalink:  pretty
