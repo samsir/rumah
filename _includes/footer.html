@@ -1,6 +1,6 @@
 <footer class="mastfoot py-3 text-center bg-light fixed-bottom h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <span class="text-muted">Made with <i class="fas fa-heart faa-pulse animated" style="color:Red"></i> in the bedroom –&nbsp;
+  <span class="text-muted">Made with <i class="bi bi-heart-fill" style="color:Red"></i> in the bedroom –&nbsp;
     {%- for link in site.socials-links -%}
     {%- assign curkey = link[0] -%}
     {%- assign element = site.data.socials[curkey] -%}
@@ -12,10 +12,10 @@
       <a class="mr-1 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
     {%- endif -%}
         {%- if curkey == 'rss' -%}
-        <i class="fas {{ element.icon }}"></i>
+        <i class="bi {{ element.icon }}"></i>
         <span class="sr-only">{{ element.name }}</span>
         {%- else -%}
-        <i class="fab {{ element.icon }}"></i>
+        <i class="bi {{ element.icon }}"></i>
         <span class="sr-only">{{ element.name }}</span>
         {%- endif -%}
         </a>
