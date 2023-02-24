@@ -1,3 +1,3 @@
 # samsiral.am
 
-Thanks to Github, Jekyll, Font Awesome, Bootstrap dan pihak lain yang ngga bisa saya sebutkan satu persatu :)
+Thanks to Github, Jekyll, Bootstrap, jQuery dan pihak lain yang nggak bisa saya sebutkan satu-persatu :))
