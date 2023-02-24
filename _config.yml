@@ -1,5 +1,3 @@
-# Welcome to Jekyll!
-
 # Site settings
 title: Samsir
 email: # "samsiralamsamsiralam@gmail.com"
@@ -13,8 +11,6 @@ name: Samsir
 logo: /assets/images/brand.svg
 
 # Select your active Socials Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/socials.yml
 socials-links:
 #  rss: true
@@ -33,12 +29,6 @@ permalink:  pretty
 sass:
   sass_dir: _sass
   style:     :compressed # You might prefer to minify using expanded
-
-# Set Chrome tab theme color
-chrome-tab-theme-color: "#14ac6c"
-
-# Syntax Highlighter
-highlighter: rouge
 
 # Use the following plug-ins
 plugins:
