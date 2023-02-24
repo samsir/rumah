@@ -7,59 +7,39 @@
 email:
   name: "Email me"
   baseURL: "mailto:"
-  icon: "fas fa-envelope"
-
-facebook:
-  name: "Facebook"
-  baseURL: "https://www.facebook.com/"
-  icon: "fa-facebook"
+  icon: "bi-envelope-at-fill"
 
 github:
   name: "GitHub"
   baseURL: "https://github.com/"
-  icon: "fa-github"
-
-instagram:
-  name: "Instagram"
-  baseURL: "https://www.instagram.com/"
-  icon: "fa-instagram"
+  icon: "bi-github"
 
 linkedin:
   name: "LinkedIn"
   baseURL: "https://linkedin.com/in/"
-  icon: "fa-linkedin"
+  icon: "bi-linkedin"
 
 medium:
   name: "Medium"
   baseURL: "https://medium.com/@"
-  icon: "fa-medium"
+  icon: "bi-medium"
 
 rss:
   name: "RSS"
   baseURL: "{{ '/feed.xml' | prepend: site.baseurl }}"
-  icon: "fa-rss"
+  icon: "bi-rss-fill"
   
 spotify:
   name: "Spotify"
   baseURL: "https://open.spotify.com/user/"
-  icon: "fa-spotify"
+  icon: "bi-spotify"
 
 telephone:
   name: "Phone"
   baseURL: "tel:"
-  icon: "fa-phone"
+  icon: "bi-telephone-fill"
 
-twitter:
-  name: "Twitter"
-  baseURL: "https://twitter.com/"
-  icon: "fa-twitter"
-  
 yelp:
   name: "Yelp"
   baseURL: "https://{{ site.author.yelp }}.yelp.com"
-  icon: "fa-yelp"
-  
-youtube:
-  name: "YouTube"
-  baseURL: "https://www.youtube.com/"
-  icon: "fa-youtube"
+  icon: "bi-yelp"
