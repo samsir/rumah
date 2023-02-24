@@ -1,61 +1,61 @@
 <article class="col-lg-5 col-sm-7 col-md-7 mx-auto" role="menu">
-         <div class="card border-0">
-                  <div class="card-header border-0 bg-white pt-1">
-                           <h3 class="text-center">
-                                    <small class="text-muted">Kartu Tanda Netizen</small>
-                           </h3>
-                  </div>
-                  <div class="card-body py-0">
-                           <div class="row">
-                                    <div class="col-md-5">
-                                             <a href="{{ site.baseurl }}/assets/images/ktn.png"><img class="img-thumbnail disable-user-select" alt="avatar" src="{{ site.baseurl }}/assets/images/ava.png" alt="{{ site.url }}"></a>
+    <div class="card border-0">
+        <div class="card-header border-0 bg-white pt-1">
+            <h3 class="text-center">
+                <small class="text-muted">Kartu Tanda Netizen</small>
+            </h3>
+        </div>
+        <div class="card-body py-0">
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="{{ site.baseurl }}/assets/images/ktn.png"><img class="img-thumbnail disable-user-select" alt="avatar" src="{{ site.baseurl }}/assets/images/ava.png" alt="{{ site.url }}"></a>
+                </div>
+                <div class="col-md-7">
+                    <table class="table table-sm">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="border-0">NIN </th>
+                                <td class="border-0">:</td>
+                                <td class="border-0">62.0123456789.1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-0">Nama</th>
+                                <td class="border-0">:</td>
+                                <td class="border-0"><a href="https://about.me/samsiralam" target="_blank">Samsir</a> <i class="fas fa-external-link-alt"></i></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="border-0">Kontak</th>
+                                <td class="border-0">:</td>
+                                <td class="border-0">
+                                    <!-- Social links -->
+                                    <div class="nav">
+                                        {%- for link in site.socials-links -%}
+                                        {%- assign curkey = link[0] -%}
+                                        {%- assign element = site.data.socials[curkey] -%}
+                                        {%- if curkey == 'rss' -%}
+                                        <a class="mr-1 text-decoration-none" href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
+                                            {%- elsif curkey == 'yelp' -%}
+                                            <a class="mr-1 text-decoration-none" href="https://{{ site.socials-links[curkey] }}.yelp.com" title="{{ element.name }}">
+                                            {%- else -%}
+                                            <a class="mr-1 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
+                                        {%- endif -%}
+                                        {%- if curkey == 'rss' -%}
+                                        <i class="fas {{ element.icon }}"></i>
+                                        <span class="sr-only">{{ element.name }}</span>
+                                        {%- else -%}
+                                        <i class="fab {{ element.icon }}"></i>
+                                        <span class="sr-only">{{ element.name }}</span>
+                                        {%- endif -%}
+                                        </a>
+                                        {%- endfor -%}
                                     </div>
-                                    <div class="col-md-7">
-                                             <table class="table table-sm">
-                                                      <tbody>
-                                                               <tr>
-                                                                        <th scope="row" class="border-0">NIN </th>
-                                                                        <td class="border-0">:</td>
-                                                                        <td class="border-0">62.0123456789.1</td>
-                                                               </tr>
-                                                               <tr>
-                                                                        <th scope="row" class="border-0">Nama</th>
-                                                                        <td class="border-0">:</td>
-                                                                        <td class="border-0"><a href="https://about.me/samsiralam" target="_blank">Samsir</a> <i class="bi bi-box-arrow-up-right"></i></td>
-                                                               </tr>
-                                                               <tr>
-                                                                        <th scope="row" class="border-0">Kontak</th>
-                                                                        <td class="border-0">:</td>
-                                                                        <td class="border-0">
-                                                                                 <!-- Social links -->
-                                                                                 <div class="nav">
-                                                                                          {%- for link in site.socials-links -%}
-                                                                                          {%- assign curkey = link[0] -%}
-                                                                                          {%- assign element = site.data.socials[curkey] -%}
-                                                                                          {%- if curkey == 'rss' -%}
-                                                                                          <a class="mr-1 text-decoration-none" href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
-                                                                                                   {%- elsif curkey == 'yelp' -%}
-                                                                                                   <a class="mr-1 text-decoration-none" href="https://{{ site.socials-links[curkey] }}.yelp.com" title="{{ element.name }}">
-                                                                                                            {%- else -%}
-                                                                                                            <a class="mr-1 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
-                                                                                                                     {%- endif -%}
-                                                                                                                     {%- if curkey == 'rss' -%}
-                                                                                                                     <i class="bi {{ element.icon }}"></i>
-                                                                                                                     <span class="sr-only">{{ element.name }}</span>
-                                                                                                                     {%- else -%}
-                                                                                                                     <i class="bi {{ element.icon }}"></i>
-                                                                                                                     <span class="sr-only">{{ element.name }}</span>
-                                                                                                                     {%- endif -%}
-                                                                                                            </a>
-                                                                                                            {%- endfor -%}
-                                                                                 </div>
-                                                                        </td>
-                                                               </tr>
-                                                      </tbody>
-                                             </table>
-                                    </div>
-                           </div>
-                  </div>
-         </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </article>
 <!-- /.card -->
