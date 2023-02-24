@@ -6,22 +6,6 @@
   <meta property="og:image:height" content="256">
   <meta property="og:image:type" content="image/png">
   <meta property="fb:admins" content="100002414921993">
-
-{% if page.summary %}
-<meta name="description" content="{{ page.summary | escape }}">
-{% endif %}
-{% if page.tags %}
-<meta name="tags" content="{{ page.tags | join: ', ' | escape }}"/>
-{% endif %}
-{% if page.keywords %}
-<meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
-{% endif %}
-{% if page.description %}
-  <meta content="{{ page.description }}" property="og:description">
-{% else %}
-  <meta content="{{ site.description }}" property="og:description">
-{% endif %}
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
