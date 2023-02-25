@@ -40,11 +40,13 @@
                                             {%- elsif curkey == 'yelp' -%}
                                             <a class="me-2 text-decoration-none"
                                                 href="https://{{ site.socials-links[curkey] }}.yelp.com"
-                                                title="{{ element.name }}">
+                                                title="{{ element.name }}"
+                                                target="_blank">
                                                 {%- else -%}
                                                 <a class="me-2 text-decoration-none"
                                                     href="{{element.baseURL}}{{ site.socials-links[curkey] }}"
-                                                    title="{{ element.name }}">
+                                                    title="{{ element.name }}"
+                                                    target="_blank">
                                                     {%- endif -%}
                                                     {%- if curkey == 'rss' -%}
                                                     <i class="bi {{ element.icon }}"></i>
