@@ -24,15 +24,15 @@ medium:
   baseURL: "https://medium.com/@"
   icon: "bi-medium"
 
-rss:
-  name: "RSS"
-  baseURL: "{{ '/feed.xml' | prepend: site.baseurl }}"
-  icon: "bi-rss-fill"
-  
 spotify:
   name: "Spotify"
   baseURL: "https://open.spotify.com/user/"
   icon: "bi-spotify"
+
+rss:
+  name: "RSS"
+  baseURL: "{{ '/feed.xml' | prepend: site.baseurl }}"
+  icon: "bi-rss-fill"
 
 telephone:
   name: "Phone"

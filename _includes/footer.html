@@ -1,23 +1,26 @@
 <footer class="mastfoot py-3 text-center bg-light fixed-bottom h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <span class="text-muted">Made with <i class="bi bi-heart-fill" style="color:rgb(255, 100, 100)"></i> in the bedroom –&nbsp;
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
+  <span class="text-muted">Made with <i class="bi bi-heart-fill" style="color:rgb(255, 100, 100)"></i> in the bedroom
+    –&nbsp;
     {%- for link in site.socials-links -%}
     {%- assign curkey = link[0] -%}
     {%- assign element = site.data.socials[curkey] -%}
     {%- if curkey == 'rss' -%}
     <a class="me-2 text-decoration-none" href="{{ '/feed.xml' | prepend: site.baseurl }}" title="{{ element.name }}">
       {%- elsif curkey == 'yelp' -%}
-      <a class="me-2 text-decoration-none" href="https://{{ site.socials-links[curkey] }}.yelp.com" title="{{ element.name }}">
+      <a class="me-2 text-decoration-none" href="https://{{ site.socials-links[curkey] }}.yelp.com"
+        title="{{ element.name }}">
         {%- else -%}
-        <a class="me-2 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}" title="{{ element.name }}">
-        {%- endif -%}
-        {%- if curkey == 'rss' -%}
-        <i class="bi {{ element.icon }}"></i>
-        {%- else -%}
-        <i class="bi {{ element.icon }}"></i>
-        {%- endif -%}
-      </a>
-      {%- endfor -%}
+        <a class="me-2 text-decoration-none" href="{{element.baseURL}}{{ site.socials-links[curkey] }}"
+          title="{{ element.name }}">
+          {%- endif -%}
+          {%- if curkey == 'rss' -%}
+          <i class="bi {{ element.icon }}"></i>
+          {%- else -%}
+          <i class="bi {{ element.icon }}"></i>
+          {%- endif -%}
+        </a>
+        {%- endfor -%}
   </span>
 </footer>
 <!-- /.mastfoot -->
