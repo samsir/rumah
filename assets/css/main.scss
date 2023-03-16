@@ -3,10 +3,9 @@
 ---
 @charset "utf-8";
 
-// Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Actor&family=PT+Sans&display=swap');
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  "variables"
-  ;
+"variables"
+;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Sans&display=swap');
