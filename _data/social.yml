@@ -1,0 +1,40 @@
+# This file contains meta data for various social media sites
+---
+  email:
+    name: Email
+    icon: bi-envelope-at-fill
+  facebook:
+    name: Facebook
+    icon: bi-facebook
+    prepend: 'https://facebook.com/'
+  github:
+    name: GitHub
+    icon: bi-github
+    prepend: "https://github.com/"
+  instagram:
+    name: Instagram
+    icon: bi-instagram
+    prepend: 'https://instagram.com/'
+  linkedin:
+    name: LinkedIn
+    icon: bi-linkedin
+    prepend: "https://www.linkedin.com/in/"
+  medium:
+    name: Medium
+    icon: bi-medium
+    prepend: 'https://medium.com/@'
+  rss:
+    name: RSS
+    icon: bi-rss-fill
+  spotify:
+    name: Spotify
+    icon: bi-spotify
+    prepend: "https://open.spotify.com/user/"
+  twitter:
+    name: Twitter
+    icon: bi-twitter
+    prepend: 'https://twitter.com/'
+  youtube:
+    name: YouTube
+    icon: bi-youtube
+    prepend: "https://www.youtube.com/channel/"

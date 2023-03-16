@@ -1,0 +1,15 @@
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
+
+<div class="card" role="complementary">
+  <{{ include.heading_tag | default:'h2' }} class="card-title hr">
+    {{ include.heading | default:include.author.name }}
+  </{{ include.heading_tag | default:'h2' }}>
+  <div class="card-body">
+    {% if include.author.picture %}
+    {% include components/srcset-img.html class="img-thumbnail" img=include.author.picture alt=include.author.name %}
+    {% endif %}
+    <p class="card-text">
+      {{ include.author.about | markdownify }}
+    </p>
+  </div>
+</div>

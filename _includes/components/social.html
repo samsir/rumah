@@ -1,0 +1,5 @@
+<ul class="list-group list-group-flush">
+  {% for link in include.social %}
+  {% include components/social-list.html platform=link.first username=link.last %}
+  {% endfor %}
+</ul>

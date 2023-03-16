@@ -1,0 +1,15 @@
+<!--
+  Header
+-->
+<header role="banner">
+  {% if site.brand %}
+  <a class="navbar-brand position-fixed z-1" href="{{ site.url }}">
+    <img src="{{ site.brand }}" alt="{{ site.title }}" loading="lazy">
+  </a>
+  {% else %}
+  <a class="navbar-brand" href="{{ site.url }}">
+    <h1>{{ site.title }}</h1>
+  </a>
+  {% endif %}
+  {% include nav.html %}
+</header>

@@ -1,0 +1,22 @@
+// General
+// ---
+
+// Variables
+// ---
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+// Heading
+// ---
+h6, h5, h4, h3, h2, h1 {
+  font-family: 'Merriweather', serif;
+}
+
+// Bootstrap Overrides
+// ---
+.btn:focus,
+.btn.focus,
+.form-control:focus {
+  box-shadow: 0 0 black;
+}

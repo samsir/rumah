@@ -1,0 +1,22 @@
+{% assign post = include.post %}
+
+{% if site.use_lsi or site.use_lsi %}
+{% assign related_posts = site.related_posts %}
+{% elsif post.categories.first %}
+{% assign related_posts = site.categories[post.categories.first] | where_exp:"post", "post.url != page.url" %}
+{% elsif post.tags.first %}
+{% assign related_posts = site.tags[post.tags.first] | where_exp:"post", "post.url != page.url" %}
+{% else %}
+{% assign related_posts = site.related_posts %}
+{% endif %}
+
+{% if related_posts.size > 0 %}
+<div class="row mb-4">
+  <h3>{{ site.data.strings.related_posts | default:"Related Posts" }}</h3>
+  <ul class="list-group list-unstyled">
+    {% for post in related_posts limit:3 %}
+    {% include components/post-list.html post=post %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

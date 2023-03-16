@@ -1,0 +1,21 @@
+- title: About
+  url: /insight/about/
+
+- title: Blog
+  url: /blog/
+
+- title: Disclaimer
+  url: /insight/disclaimer/
+
+- title: Privacy
+  url: /insight/privacy/
+
+#- title: Group of Things
+#  url: /group/
+#  sublinks:
+#    - title: Sub-item 1
+#      url: /group/si1
+#    - title: Sub-item 2
+#      url: /group/si2
+#    - title: Sub-item 3
+#      url: /group/si3

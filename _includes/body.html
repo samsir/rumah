@@ -1,0 +1,13 @@
+<!--
+  Container
+-->
+<main class="container my-5" role="main">
+  <section class="row">
+
+    {{ content }}
+
+    {% if site.disqus_shortname and page.layout == 'post' %}
+    {% include comments.html %}
+    {% endif %}
+  </section>
+</main>

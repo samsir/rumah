@@ -1,0 +1,52 @@
+{% assign post = include.post %}
+
+<article id="{{ post.id | slice: 1,9999 }}" class="post{% if include.link_title %} mb6{% endif %}" role="article">
+  <header>
+    <h1 class="pb-2">
+      {% if include.link_title %}<a href="{{ post.url | relative_url }}" data-flip="title">{% endif %}
+        {{ post.title }}
+        {% if include.link_title %}</a>{% endif %}
+    </h1>
+
+    <p class="text-muted">
+      <span class="me-2"><i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
+          post.date | date: "%d %b %Y" }}</time></span>
+      <i class="bi bi-archive"></i> {% include components/post-meta.html tags=post.categories meta=site.archives
+      separator=" / " %}
+    </p>
+  </header>
+
+  {% include components/message.html text=post.description %}
+
+  {% for tag_slug in post.tags %}
+  {% unless tag.cover-img %}
+  {% assign tag = site.archives[page.tags] | where: "slug", tag_slug | first %}
+  {% endunless %}
+  {% endfor %}
+
+  {% unless include.excerpt %}
+
+  {% if post.cover-img %}<img class="img-fluid mb-4" src="{{ post.cover-img }}" alt="{{ post.title }}">
+  {% elsif tag.cover-img %}
+  <img class="img-fluid mb-4" src="{{ tag.cover-img }}" alt="{{ post.title }}">
+  {% endif %}
+  {{ post.content }}
+  <footer>
+    <p class="text-muted">
+      <i class="bi bi-tags"></i> {% include components/post-meta.html tags=post.tags meta=site.archives separator=", "
+      %}
+    </p>
+  </footer>
+  {% else %}
+  {{ post.excerpt }}
+  {% assign text_continue = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+  <footer>
+    <p>
+      <a href="{{ post.url | relative_url }}" data-flip="title">{{ text_continue }}</a>
+    </p>
+  </footer>
+  {% endunless %}
+
+</article>
+
+{% include components/share.html %}

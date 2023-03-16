@@ -1,0 +1,24 @@
+<!--
+  Aside
+-->
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
+
+<aside class="col-sm-4" role="complementary">
+  <h3>Contoh Sidebar</h3>
+  <div class="card-text">
+    {{ site.tagline | truncatewords:50 | markdownify }}
+  </div>
+
+  {% if author.picture %}
+    {% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}
+  {% endif %}
+
+  <div class="card-text">
+    {{ site.description | truncatewords:50 | markdownify }}
+    {% assign author = site.data.authors.first[1] %}
+  </div>
+
+  {% if author.social %}
+    {% include components/social.html social=author.social %}
+  {% endif %}
+</aside>

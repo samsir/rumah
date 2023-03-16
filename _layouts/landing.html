@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html class="h-100" lang="{{ page.lang | default:site.lang | default:'en' }}">
+
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
+
+{% include head.html %}
+
+<body class="d-flex align-items-center h-100">
+  <main class="container" role="main">
+    {% include card.html %}
+  </main>
+  <!-- /.container -->
+</body>
+
+</html>

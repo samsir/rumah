@@ -1,0 +1,40 @@
+<!--
+  Navigation
+-->
+<nav class="navbar navbar-expand" role="navigation">
+  <div class="container">
+    <div class="overflow-y-hidden position-relative">
+      <ul class="nav flex-nowrap text-nowrap overflow-x-auto me-auto py-3">
+        {% assign pages = site.pages %}
+        {% for document in site.documents %}
+        {% assign pages = pages | push: document %}
+        {% endfor %}
+        {% assign subpages = pages | where: "menu", false | sort: "order" %}
+        {% assign pages = pages | where: "menu", true | sort: "order" %}
+        {% assign count = 0%}
+        {% for node in pages %}
+        {% assign count = count | plus: 1 %}
+        <li class="nav-item dropdown">
+          <a id="{{ count }}"
+            class="nav-link d-inline{% if page.url == node.url %} active{% endif %}{% if node.submenu %} pr-0{% endif %}"
+            href="{{ node.url | relative_url }}">{{ node.title }}
+            {% if node.submenu %}
+            <a for="{{ count }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
+            {% endif %}
+          </a>
+          {% for subnode in subpages %}
+          {% if subnode.category == node.slug %}
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item{% if page.url == subnode.url %} active{% endif %}"
+              href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a>
+          </div>
+          {% endif %}
+          {% endfor %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% include components/search-box.html %}
+  </div>
+</nav>

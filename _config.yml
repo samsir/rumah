@@ -1,0 +1,74 @@
+# User configuration
+title:  samsiral.am
+description:  > # this means to ignore newlines until "baseurl:"
+url:  https://samsiral.am # the base hostname & protocol for your site
+baseurl: ""  # the subpath of your site, e.g. /blog
+
+# This should be the same author as first entry in `_data/authors.yml`
+author:
+  name: Samsir
+
+# Fallback image and color
+image:  
+color:  '#4f86aa'
+
+# Site Brand
+brand: /assets/img/brand.svg
+
+# Set your Google Analytics id to receive `pageview` events.
+# google_analytics: 
+
+# Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
+disqus: true
+disqus_shortname: samsiralam
+
+# This text will appear in the footer. Markdown enabled.
+copyright:  '&copy; 2023 &#124; samsiral.am'
+
+# Format of the permalinks
+permalink:  pretty
+
+# Pagination configuration
+paginate: 2
+paginate_path:  'blog/page/:num'
+
+# Set to true when building with the `--lsi` option
+# See: https://jekyllrb.com/docs/variables/#site-variables
+# use_lsi:             true
+
+# Collections
+collections:
+  page:
+    permalink: /insight/:path/
+    output: true
+  posts:
+    permalink: /post/:title/
+    output: true
+  archives:
+    permalink: /:path/
+    output: true
+    categories:
+      permalink: /categories/:path/
+      output: true
+    tags:
+      permalink: /tags/:path/
+      output: true
+
+# Plugin
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Format of the syntaxs
+markdown: kramdown
+highlighter: rouge
+
+# Minified stylesheet
+sass:
+  style:  compressed
+
+exclude:
+  - README.md
+  - LICENSE.md
+  - Gemfile
