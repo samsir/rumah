@@ -37,4 +37,4 @@
   youtube:
     name: YouTube
     icon: bi-youtube
-    prepend: "https://www.youtube.com/channel/"
+    prepend: "https://www.youtube.com/@"
