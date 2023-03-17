@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="h-100" lang="{{ page.lang | default:site.lang | default:'en' }}">
+
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
+
+{% include head.html %}
+
+<body class="d-flex align-items-center h-100">
+  <main class="container" role="main">
+    <section class="col-lg-5 col-sm-7 col-md-7 m-auto">
+      <div class="card border-0">
+          <div class="card-header border-0 bg-white pt-1">
+              <h3 class="text-center">
+                  <small class="text-muted">Kartu Tanda Netizen</small>
+              </h3>
+          </div>
+          <div class="card-body py-0">
+              <div class="row">
+                  <div class="col-md-5">
+                      {% if author.picture %}
+                      <a href="{{ site.baseurl }}/assets/doc/CV.pdf">
+                          {% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name
+                          %}
+                      </a>
+                      {% endif %}
+                  </div>
+                  <div class="col-md-7">
+                      <table class="table table-sm">
+                          <tbody>
+                              <tr>
+                                  <th scope="row" class="border-0">NIN </th>
+                                  <td class="border-0">:</td>
+                                  <td class="border-0">62.0123456789.1</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row" class="border-0">Nama</th>
+                                  <td class="border-0">:</td>
+                                  <td class="border-0"><a href="https://about.me/samsiralam" target="_blank">{{ site.title
+                                          }}</a> <i class="bi bi-box-arrow-up-right"></i></td>
+                              </tr>
+                              <tr>
+                                  <th scope="row" class="border-0">Kontak</th>
+                                  <td class="border-0">:</td>
+                                  <td class="border-0">
+                                      {% if author.social %}
+                                      <!-- Social links -->
+                                      <div class="nav">
+                                          {% include components/social.html social=author.social %}
+                                      </div>
+                                      {% endif %}
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- /.card -->
+  </main>
+  <!-- /.container -->
+</body>
+
+</html>
