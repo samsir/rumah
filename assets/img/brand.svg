@@ -22,9 +22,7 @@
      id="bg_hijau"
      x="0"
      y="0"
-     style="stroke:none;stroke-width:0;stroke-dasharray:none;image-rendering:optimizeQuality"
-     inkscape:highlight-color="#14ac6c"
-     inkscape:label="background"><desc
+     style="stroke:none;stroke-width:0;stroke-dasharray:none;image-rendering:optimizeQuality"><desc
        id="desc_bg">Background Hijau</desc><title
        id="title_bg">Background</title></rect><path
      fill="#ffffff"
@@ -34,9 +32,7 @@
      stroke-linejoin="round"
      d="M 3.9069191,37.50247 14.00562,28.90404 v 5.008644 h 7.093136 V 41.08723 H 14.00562 v 5.008647 z"
      id="panah_putih"
-     style="stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2.4;stroke-dasharray:none;image-rendering:optimizeQuality"
-     inkscape:label="panah"
-     inkscape:highlight-color="#ffffff"><desc
+     style="stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2.4;stroke-dasharray:none;image-rendering:optimizeQuality"><desc
        id="desc_panah">Panah Putih</desc><title
        id="title_panah">Panah</title></path><metadata
      id="metadata1363"><rdf:RDF><cc:Work
