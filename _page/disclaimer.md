@@ -3,6 +3,7 @@ layout: page
 title: Disclaimer
 menu: false
 order: 11
+cover-img: https://samsiral.am/assets/img/ava-invert.png
 ---
 
 ### Persetujuan

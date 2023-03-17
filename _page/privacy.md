@@ -3,6 +3,7 @@ layout: page
 title: Privacy
 menu: false
 order: 12
+cover-img: https://samsiral.am/assets/img/ava-invert.png
 ---
 
 We are very notice about the importance of privacy to visitors of our website, therefore by all means we will try to maintain the privacy of visitors to our Blog to stay safe and keep secrets, so that all personal information about visitors to stay awake.
