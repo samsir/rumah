@@ -6,7 +6,7 @@
   facebook:
     name: Facebook
     icon: bi-facebook
-    prepend: 'https://facebook.com/'
+    prepend: "https://facebook.com/"
   github:
     name: GitHub
     icon: bi-github
@@ -14,7 +14,7 @@
   instagram:
     name: Instagram
     icon: bi-instagram
-    prepend: 'https://instagram.com/'
+    prepend: "https://instagram.com/"
   linkedin:
     name: LinkedIn
     icon: bi-linkedin
@@ -22,7 +22,7 @@
   medium:
     name: Medium
     icon: bi-medium
-    prepend: 'https://medium.com/@'
+    prepend: "https://medium.com/@"
   rss:
     name: RSS
     icon: bi-rss-fill
@@ -33,7 +33,7 @@
   twitter:
     name: Twitter
     icon: bi-twitter
-    prepend: 'https://twitter.com/'
+    prepend: "https://twitter.com/"
   youtube:
     name: YouTube
     icon: bi-youtube
