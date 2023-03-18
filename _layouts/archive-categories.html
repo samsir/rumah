@@ -4,9 +4,14 @@ layout: default
 
 {% assign category = site.archives[page.categories] | where: "slug", page.slug | first %}
 {% if category %}
-{% assign posts = site.categories[page.slug] %}
+  {% assign posts = site.categories[page.slug] %}
 {% else %}
-{% assign posts = site.posts %}
+  {% assign tag = site.archives[page.tags] | where: "slug", page.slug | first %}
+  {% if tag %}
+    {% assign posts = site.tags[page.slug] %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
 {% endif %}
 
 {% if page.title.size > 0 %}
@@ -16,11 +21,14 @@ layout: default
 </header>
 {% endif %}
 
-{% for category in site.categories %}
-<a name="{{ category | first }}">{{ category | first }}</a>
-<ul>
-  {% for post in category.last %}
-  {% include components/post-list.html post=page format="%d %b" %}
-  {% endfor %}
-</ul>
+{% for post in posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+    <ul>
+    {% assign date = currentdate %}
+  {% endif %}
+  {% include components/post-list.html post=post format="%d %b" %}
+  {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
