@@ -4,7 +4,7 @@ title: Unclassified
 slug: unclassified
 menu: false
 submenu: false
-order: 1
+order: 5
 description: >
   "Uncategorized"
 ---
