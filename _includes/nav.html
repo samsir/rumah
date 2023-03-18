@@ -15,19 +15,13 @@
         {% for node in pages %}
         {% assign count = count | plus: 1 %}
         <li class="nav-item dropdown">
-          <a id="{{ count }}"
-            class="nav-link d-inline{% if page.url == node.url %} active{% endif %}{% if node.submenu %} pr-0{% endif %}"
-            href="{{ node.url | relative_url }}">{{ node.title }}
-            {% if node.submenu %}
-            <a for="{{ count }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
-            {% endif %}
+          <a id="{{ count }}" class="nav-link d-inline{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+          {% if node.submenu %}<a for="{{ count }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>{% endif %}
           </a>
           {% for subnode in subpages %}
           {% if subnode.category == node.slug %}
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item{% if page.url == subnode.url %} active{% endif %}"
-              href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a>
+            <a class="dropdown-item{% if page.url == subnode.url %} active{% endif %}" href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a>
           </div>
           {% endif %}
           {% endfor %}
