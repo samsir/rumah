@@ -2,8 +2,8 @@
 layout: post
 title: "Postingan Satu (1)"
 subtitle: "posting satu (1)"
-categories: [kategori-1, kategori-2]
-tags: [tag-1, tag-2]
+categories: kategori-1 kategori-2
+tags: tag-1 tag-2
 comments: true
 cover-img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/LoremIpsumDesign.png"
 ---  
