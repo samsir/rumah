@@ -1,6 +1,6 @@
 ---
 layout: archive-categories
-title: Contoh Kategori Dua (2)
+title: Kategori Dua
 slug: kategori-2
 menu: true
 submenu: false

@@ -1,6 +1,6 @@
 ---
 layout: archive-tags
-title: Contoh Tag Satu (1)
+title: Tag Satu
 slug: tag-1
 category: kategori-1
 menu: false

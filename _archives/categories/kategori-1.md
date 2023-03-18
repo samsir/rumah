@@ -1,6 +1,6 @@
 ---
 layout: archive-categories
-title: Contoh Kategori Satu (1)
+title: Kategori Satu
 slug: kategori-1
 menu: true
 submenu: true

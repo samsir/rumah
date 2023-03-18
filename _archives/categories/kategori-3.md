@@ -1,6 +1,6 @@
 ---
 layout: archive-categories
-title: Contoh Kategori Tiga (3)
+title: Kategori Tiga
 slug: kategori-3
 menu: false
 submenu: false
