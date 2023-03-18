@@ -2,8 +2,8 @@
 layout: post
 title: "Postingan Empat (4)"
 subtitle: "posting empat (4)"
-categories: [kategori-2, kategori-4]
-tags: [tag-2, tag-4]
+categories: kategori-2 kategori-4
+tags: tag-2 tag-4
 comments: true
 cover-img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/LoremIpsumDesign.png"
 ---  
