@@ -1,39 +1,8 @@
 <!--
   Navigation
 -->
-<nav class="navbar navbar-expand" role="navigation">
-  <div class="container d-none d-md-block">
-    <div class="overflow-y-hidden position-relative">
-      <ul class="nav flex-nowrap text-nowrap overflow-x-auto me-auto py-3">
-        {% assign pages = site.pages %}
-        {% for document in site.documents %}
-        {% assign pages = pages | push: document %}
-        {% endfor %}
-        {% assign subpages = pages | where: "menu", false | sort: "order" %}
-        {% assign pages = pages | where: "menu", true | sort: "order" %}
-        {% assign count = 0%}
-        {% for node in pages %}
-        {% assign count = count | plus: 1 %}
-        <li class="nav-item dropdown">
-          <a id="{{ count }}" class="nav-link d-inline" href="{{ node.url | relative_url }}">{{ node.title }}
-            {% if node.submenu %}
-            <a for="{{ count }}" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-            {% endif %}
-          </a>
-          {% for subnode in subpages %}
-          {% if subnode.category == node.slug %}
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a></li>
-          </ul>
-          {% endif %}
-          {% endfor %}
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% include components/search-box.html %}
-  </div>
-  <div class="container d-none d-sm-block">
+<nav class="navbar navbar-expand d-none d-md-block" role="navigation">
+  <div class="container">
     <div class="overflow-y-hidden position-relative">
       <ul class="nav flex-nowrap text-nowrap overflow-x-auto me-auto py-3">
         {% assign pages = site.pages %}
