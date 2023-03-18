@@ -15,9 +15,9 @@
         {% for node in pages %}
         {% assign count = count | plus: 1 %}
         <li class="nav-item dropdown">
-          <a id="{{ count }}" class="nav-link dropdown-toggle{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}
-          {% if node.submenu %}<a for="{{ count }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>{% endif %}
-          </a>
+          <a id="{{ count }}" class="nav-link dropdown-toggle{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+          {% if node.submenu %}
+          <a for="{{ count }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>{% endif %}
           {% for subnode in subpages %}
           {% if subnode.category == node.slug %}
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
