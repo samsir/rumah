@@ -1,10 +1,13 @@
 <!--
   Navigation
 -->
-<nav class="navbar navbar-expand d-none d-md-block" role="navigation">
+<nav class="navbar navbar-expand" role="navigation">
   <div class="container">
-    <div class="overflow-y-hidden position-relative">
-      <ul class="nav flex-nowrap text-nowrap overflow-x-auto me-auto py-3">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar1">
+      <ul class="navbar-nav me-auto py-3">
         {% assign pages = site.pages %}
         {% for document in site.documents %}
         {% assign pages = pages | push: document %}
