@@ -1,30 +1,14 @@
 ---
 layout: default
+title: "Tags"
+cover-img: https://samsiral.am/assets/img/brand.png
 ---
 
-{% assign tag = site.archives[page.tags] | where: "slug", page.slug | first %}
-{% if tag %}
-{% assign posts = site.tags[page.slug] %}
-{% else %}
-{% assign posts = site.posts %}
-{% endif %}
 
-{% if page.title.size > 0 %}
-<header>
-  <h1 class="page-title">{{ page.title }}</h1>
-</header>
-{% endif %}
+{% assign posts = site.tags[page.slug] | where: "categories", page.category %}
 
 {% for post in posts %}
-{% assign currentdate = post.date | date: "%Y" %}
-{% if currentdate != date %}
-{% unless forloop.first %}</ul>{% endunless %}
-<h3 id="y{{post.date | date: " %Y"}}" class="text-muted">{{ currentdate }}</h3>
-<ul class="tags-posts">
-  {% assign date = currentdate %}
-  {% endif %}
-  {% include components/post-list.html post=page format="%d %b" %}
-  {% if forloop.last %}
-</ul>
-{% endif %}
+{% include post.html post=post link_title=true excerpt=true %}
 {% endfor %}
+
+{% include pagination.html %}
