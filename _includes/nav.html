@@ -17,7 +17,7 @@
         <li class="nav-item dropdown">
           <a id="{{ count }}" class="nav-link d-inline" href="{{ node.url | relative_url }}">{{ node.title }}
             {% if node.submenu %}
-            <a for="{{ count }}" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+            <a for="{{ count }}" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
             {% endif %}
           </a>
           {% for subnode in subpages %}
