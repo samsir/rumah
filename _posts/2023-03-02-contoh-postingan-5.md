@@ -3,7 +3,7 @@ layout: post
 title: "Postingan Lima (5)"
 subtitle: "posting lima (5)"
 categories: kategori-5
-tags: tag-5
+tags: tag-2 tag-5
 comments: true
 cover-img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/LoremIpsumDesign.png"
 ---  
