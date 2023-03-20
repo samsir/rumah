@@ -38,7 +38,7 @@ paginate_path:  'blog/page/:num'
 
 # Collections
 collections:
-  page:
+  pages:
     permalink: /insight/:path/
     output: true
   posts:
