@@ -16,6 +16,6 @@ layout: default
 {% unless forloop.first %}</ul>{% endunless %}
 <ul>
     {% assign date = currentdate %}
-    {% include post.html post=post link_title=true excerpt=true content_temp=false %}
+    {% include post-cat.html post=post link_title=true excerpt=true %}
     {% if forloop.last %}</ul>{% endif %}
 {% endfor %}

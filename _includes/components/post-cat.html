@@ -1,0 +1,26 @@
+{% assign post = include.post %}
+
+<article id="{{ post.id | slice: 1,9999 }}" class="post{% if include.link_title %} mb6{% endif %}">
+  <header>
+    <h1 class="pb-2">
+      {% if include.link_title %}<a href="{{ post.url | relative_url }}" data-flip="title">{% endif %}
+        {{ post.title }}
+        {% if include.link_title %}</a>{% endif %}
+    </h1>
+
+  </header>
+
+  {% include components/message.html text=post.description %}
+
+  {% unless include.excerpt %}
+
+ {{ post.excerpt }}
+  {% assign text_continue = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+  <footer>
+    <p>
+      <a href="{{ post.url | relative_url }}" data-flip="title">{{ text_continue }}</a>
+    </p>
+  </footer>
+  {% endunless %}
+
+</article>
