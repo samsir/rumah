@@ -2,16 +2,34 @@
 layout: default
 ---
 
-<div class="post-categories">
-{% if post %}
-{% assign categories = post.categories %} 
+{% assign category = site.archives[page.categories] | where: "slug", page.slug | first %}
+{% if category %}
+  {% assign posts = site.categories[page.slug] %}
 {% else %}
-{% assign categories = page.categories %} 
+  {% assign tag = site.archives[page.tags] | where: "slug", page.slug | first %}
+  {% if tag %}
+    {% assign posts = site.tags[page.slug] %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
 {% endif %}
-{% for category in categories %}
-{% include components/post-list.html post=post format="%d %b" %}
-{% unless forloop.last %}&nbsp;{% endunless %}
-{% endfor %}
-</div>
 
-{% include pagination.html %}
+{% if page.title.size > 0 %}
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% include components/message.html text=page.description %}
+  </header>
+  <hr class="sr-only"/>
+{% endif %}
+
+{% for post in posts %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+    <ul>
+    {% assign date = currentdate %}
+  {% endif %}
+  {% include components/post-list.html post=post format="%d %b" %}
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}
