@@ -48,10 +48,8 @@ collections:
     permalink: /:path/
     output: true
     categories:
-      permalink: /category/:path/
       output: true
     tags:
-      permalink: /tag/:path/
       output: true
 
 # Plugin
