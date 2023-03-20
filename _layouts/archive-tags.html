@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-{% assign posts = site.tags[page.slug] | where: "categories", page.category %}
+{% assign posts = site.tags[page.slug] | where: "tags", page.tag %}
 
 {% for post in posts %}
 {% assign currentdate = post.date | date: "%Y" %}
