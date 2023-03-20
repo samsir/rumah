@@ -13,6 +13,7 @@ layout: default
 {% endif %}
 
 {% for post in posts %}
+{% unless forloop.first %}</ul>{% endunless %}
 <ul>
     {% assign date = currentdate %}
     {% include components/post-list.html post=post format="%d %b" %}
