@@ -5,11 +5,9 @@ layout: default
 {% assign posts = site.categories[page.slug] %}
 
 {% if page.title.size > 0 %}
-<header>
     <h3>{{ page.title }}</h3>
     {% include components/message.html text=page.description %}
     <hr />
-</header>
 {% endif %}
 
 {% for post in posts %}
