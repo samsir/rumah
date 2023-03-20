@@ -1,38 +1,38 @@
 ---
 layout: default
-cover-img: https: //samsiral. Am/assets/img/brand. Png
+cover-img: https://samsiral.am/assets/img/brand.png
 ---
 
-{% assign category = site. Archives[page. Categories] | where: "slug", page. Slug | first %}
+{% assign category = site.archives[page.categories] | where: "slug", page.slug | first %}
 {% if category %}
-{% assign posts = site. Categories[page. Slug] %}
+  {% assign posts = site.categories[page.slug] %}
 {% else %}
-{% assign tag = site. Archives[page. Tags] | where: "slug", page. Slug | first %}
-{% if tag %}
-{% assign posts = site. Tags[page. Slug] %}
-{% else %}
-{% assign posts = site. Posts %}
-{% endif %}
+  {% assign tag = site.archives[page.tags] | where: "slug", page.slug | first %}
+  {% if tag %}
+    {% assign posts = site.tags[page.slug] %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
 {% endif %}
 
-{% if page. Title. Size > 0 %}
-<header>
-<h1 class="page-title">{{ page. Title }}</h1>
-{% include message. Html text=page. Description %}
-</header>
-<hr class="sr-only"/>
+{% if page.title.size > 0 %}
+  <header>
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% include message.html text=page.description %}
+  </header>
+  <hr class="sr-only"/>
 {% endif %}
 
 {% for post in posts %}
-{% assign currentdate = post. Date | date: "%y" %}
-{% if currentdate ! = date %}
-{% unless forloop. First %}</ul>{% endunless %}
-<h2 id="y{{post. Date | date: "%y"}}" class="hr">{{ currentdate }}</h2>
-<ul class="related-posts">
-{% assign date = currentdate %}
-{% endif %}
-{% include components/post-list. Html post=post format="%d %b" %}
-{% if forloop. Last %}</ul>{% endif %}
+  {% assign currentdate = post.date | date: "%Y" %}
+  {% if currentdate != date %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currentdate }}</h2>
+    <ul class="related-posts">
+    {% assign date = currentdate %}
+  {% endif %}
+  {% include post-list.html post=post format="%d %b" %}
+  {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
 
-{% include pagination. Html %}
+{% include pagination.html %}
