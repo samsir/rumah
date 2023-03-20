@@ -48,15 +48,14 @@ collections:
     permalink: /:path/
     output: true
     categories:
-      permalink: /categories/:path/
+      permalink: /category/:path/
       output: true
     tags:
-      permalink: /tags/:path/
+      permalink: /tag/:path/
       output: true
 
 # Plugin
 plugins:
-  - jekyll-archives
   - jekyll-paginate
   - jekyll-seo-tag
 
