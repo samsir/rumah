@@ -7,15 +7,16 @@
         {{ post.title }}
         {% if include.link_title %}</a>{% endif %}
     </h1>
-
   </header>
 
   {% include components/message.html text=post.description %}
 
   {% unless include.excerpt %}
 
- {{ post.excerpt }}
+  {{ post.excerpt }}
+
   {% assign text_continue = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+
   <footer>
     <p>
       <a href="{{ post.url | relative_url }}" data-flip="title">{{ text_continue }}</a>
@@ -24,3 +25,5 @@
   {% endunless %}
 
 </article>
+
+{% include components/share.html %}
