@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% assign posts = site.tags[page.slug] | where: "categories", page.category %}
-
 {% for category in site.categories %}
 {% assign cat = category[0] %}
 <h3><a href="#">{{ cat }}</a></h3>
