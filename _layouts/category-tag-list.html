@@ -8,7 +8,7 @@ layout: default
 
 {% if page.title.size > 0 %}
   <header>
-    <h1 class="page-title">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
     {% include components/message.html text=page.description %}
   </header>
   <hr class="sr-only"/>
@@ -21,7 +21,7 @@ layout: default
   {% if currenttag != tag %}
     {% unless forloop.first %}</ul>{% endunless %}
     <h2 id="y{{post.date | date: "%Y"}}" class="hr">{{ currenttag }}</h2>
-    <ul class="related-posts">
+    <ul>
     {% assign tag = currenttag %}
   {% endif %}
   {% include components/post-list.html post=post format="%d %b" %}
