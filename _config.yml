@@ -46,11 +46,13 @@ collections:
     output: true
   archives:
     permalink: /:path/
-    output: true
+    output: false
       categories:
         output: true
+        permalink: /category/:path/
       tags:
         output: true
+        permalink: /tag/:path/
 
 # Plugin
 plugins:
