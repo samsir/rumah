@@ -45,14 +45,9 @@ collections:
     permalink: /post/:title/
     output: true
   archives:
+    enabled: []
     permalink: /:path/
     output: true
-    categories:
-      permalink: /category/:path/
-      output: true
-    tags:
-      permalink: /tag/:path/
-      output: true
 
 # Plugin
 plugins:
