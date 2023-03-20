@@ -46,7 +46,7 @@ collections:
     output: true
   archives:
     enabled: []
-    permalink: /:path/
+    permalinks: /:path/
     output: true
 
 # Plugin
