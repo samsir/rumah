@@ -45,7 +45,6 @@ collections:
     permalink: /post/:title/
     output: true
   archives:
-    enabled: []
     permalink: /:path/
     output: true
       categories:
