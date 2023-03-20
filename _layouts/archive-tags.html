@@ -4,7 +4,7 @@ cover-img: https://samsiral.am/assets/img/brand.png
 ---
 
 
-{% assign posts = site.tags[page.slug] | where: "tags", page.tag %}
+{% assign posts = site.tags[page.slug] | where: "categories", page.category %}
 
 {% for post in posts %}
 {% assign currentdate = post.date | date: "%Y" %}
