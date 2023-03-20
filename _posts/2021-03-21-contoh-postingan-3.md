@@ -2,7 +2,7 @@
 layout: post
 title: "Postingan Tiga (3)"
 subtitle: "posting tiga (3)"
-categories: kategori-2 kategori-3 kategori-baru-3
+categories: kategori-3 kategori-baru-3
 tags: tag-2 tag-3 tag-baru-3
 comments: true
 cover-img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/LoremIpsumDesign.png"
