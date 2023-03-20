@@ -19,7 +19,5 @@ layout: default
     {% assign date = currentdate %}
     {% endif %}
     {% include components/post-list.html post=post format="%d %b" %}
-    {% if forloop.last %}
-</ul>
-    {% endif %}
+    {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
