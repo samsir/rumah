@@ -1,5 +1,5 @@
 ---
-layout: archive-tags
+layout: archive-categories
 title: Kategori Dua
 slug: kategori-2
 menu: true
