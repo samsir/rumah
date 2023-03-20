@@ -13,11 +13,10 @@ layout: default
 {% endif %}
 
 {% for post in posts %}
-{% assign currentdate = post.date | date: "%Y" %}{{ currentdate }}</h2>
 <ul>
     {% assign date = currentdate %}
-    {% endif %}
     {% include components/post-list.html post=post format="%d %b" %}
     {% if forloop.last %}
 </ul>
+    {% endif %}
 {% endfor %}
