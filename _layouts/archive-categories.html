@@ -2,18 +2,16 @@
 layout: default
 ---
 
-{% assign posts = site.tags[page.slug] | where: "categories", page.category %} 
-
-<ul>
-{% for category in site.categories %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
-    <ul>
-    {% for post in category.last %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
-  </li>
+<div class="post-categories">
+{% if post %}
+{% assign categories = post.categories %} 
+{% else %}
+{% assign categories = page.categories %} 
+{% endif %}
+{% for category in categories %}
+<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+{% unless forloop.last %}&nbsp;{% endunless %}
 {% endfor %}
-</ul>
+</div>
 
 {% include pagination.html %}
