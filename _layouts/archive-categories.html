@@ -2,13 +2,16 @@
 layout: default
 ---
 
+<ul>
 {% for category in site.categories %}
-{% assign cat = category[0] %}
-<h3><a href="#">{{ cat }}</a></h3>
-{% for post in site.categories[cat] %}
-<a href="{{ post-url }}">{{ post-title }}</a><samall>{{ post-date }}</small>
-{% include components/post-list.html post=post format="%d %b" %}
+  <li><a name="{{ category | first }}">{{ category | first }}</a>
+    <ul>
+    {% for post in category.last %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </li>
 {% endfor %}
-{% endfor %}
+</ul>
 
 {% include pagination.html %}
