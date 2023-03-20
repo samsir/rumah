@@ -3,6 +3,7 @@ layout: default
 ---
 
 {% assign posts = site.tags[page.slug] %}
+{% assign posts = site.categories[page.slug] %}
 
 {% if page.title.size > 0 %}
 <header>
