@@ -14,6 +14,7 @@
   {% unless include.excerpt %}
 
   {{ post.content }}
+  {% else %}
   {{ post.excerpt }}
   {% assign text_continue = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
 
