@@ -31,7 +31,7 @@ cover-img: https://samsiral.am/assets/img/brand.png
     <ul class="related-posts">
     {% assign date = currentdate %}
   {% endif %}
-  {% include post-list.html post=post format="%d %b" %}
+  {% include components/post-list.html post=post format="%d %b" %}
   {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
 
