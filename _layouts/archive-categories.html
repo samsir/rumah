@@ -2,10 +2,10 @@
 layout: default
 ---
 
-{% if category %}
+{% if categories %}
 {% assign posts = site.categories[page.slug] %}
 {% else %}
-{% if tag %}
+{% if tags %}
 {% assign posts = site.tags[page.slug] %}
 {% endif %}
 {% endif %}
