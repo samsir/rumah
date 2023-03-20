@@ -2,7 +2,15 @@
 layout: default
 ---
 
+{% if category %}
 {% assign posts = site.categories[page.slug] %}
+{% else %}
+{% if tag %}
+{% assign posts = site.tags[page.slug] %}
+{% else %}
+{% assign posts = site.posts %}
+{% endif %}
+{% endif %}
 
 {% if page.title.size > 0 %}
 <header>
