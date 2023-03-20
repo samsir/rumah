@@ -4,12 +4,10 @@ cover-img: https://samsiral.am/assets/img/brand.png
 ---
 
 
-<ul>
-{% for post in site.archives[page.categories] %}
-  <li>
-    {% include post.html post=post link_title=true excerpt=true %}
-  </li>
+{% assign posts = site.archives[page.categories] | where: "categories", page.category %}
+
+{% for post in posts %}
+{% include post.html post=post link_title=true excerpt=true %}
 {% endfor %}
-</ul>
 
 {% include pagination.html %}
