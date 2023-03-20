@@ -4,10 +4,8 @@ layout: default
 
 {% if page.categories %}
 {% assign posts = site.categories[page.slug] %}
-{% else %}
-{% if page.tags %}
+{% elseif page.tags %}
 {% assign posts = site.tags[page.slug] %}
-{% endif %}
 {% endif %}
 
 {% if page.title.size > 0 %}
