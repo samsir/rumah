@@ -11,9 +11,6 @@ layout: default
 {% endif %}
 
 {% for post in posts %}
-{% unless forloop.first %}</ul>{% endunless %}
-<ul>
     {% assign date = currentdate %}
     {% include components/post-cat.html post=post link_title=true excerpt=true %}
-    {% if forloop.last %}</ul>{% endif %}
 {% endfor %}
