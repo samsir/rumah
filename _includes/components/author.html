@@ -1,7 +1,7 @@
 {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 <div class="card">
-  <{{ include.heading_tag | default:'h2' }} class="card-title hr">
+  <{{ include.heading_tag | default:'h2' }} class="card-title">
     {{ include.heading | default:include.author.name }}
   </{{ include.heading_tag | default:'h2' }}>
   <div class="card-body">
