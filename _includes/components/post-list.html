@@ -1,11 +1,13 @@
 {% assign post = include.post %}
 {% assign format = include.format | default:site.data.strings.date_formats.related_post | default:"%d %b %Y" %}
 
-<li class="list-group-item border-0">
-    <a href="{{ post.url | relative_url }}" class="flip-title">
-        <h3 class="d-inline">{{ post.title }}</h3>
-    </a>
-    <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">
-        {{ post.date | date:format }}
-    </time>
-</li>
+<ul>
+    <li class="list-group-item border-0">
+        <a href="{{ post.url | relative_url }}" class="flip-title">
+            <h3 class="d-inline">{{ post.title }}</h3>
+        </a>
+        <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date:format }}
+        </time>
+    </li>
+</ul>
