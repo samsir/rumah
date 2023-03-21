@@ -12,9 +12,7 @@ layout: default
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 <h5 id="y{{post.date | date: " %Y"}}">{{ currentdate }}</h5>
-<ul>
     {% assign date = currentdate %}
     {% endif %}
     {% include components/post-list.html post=post format="%d %b" %}
-</ul>
 {% endfor %}
