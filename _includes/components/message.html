@@ -4,6 +4,6 @@
 {:.message}
 {% endcapture %}
 <span class="text-muted">
-  {{ desc | markdownify | remove: '<p>' | remove: '</p>' }}
+  {{ desc | markdownify }}
 </span>
 {% endif %}
