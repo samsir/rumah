@@ -11,7 +11,7 @@ layout: default
 {% for post in posts %}
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
-<h5 id="y{{post.date | date: " %Y"}}" class="hr">{{ currentdate }}</h5>
+<h5 id="y{{post.date | date: " %Y"}}">{{ currentdate }}</h5>
 <ul>
     {% assign date = currentdate %}
     {% endif %}
