@@ -10,7 +10,6 @@ layout: default
     <hr />
 {% endif %}
 
-{% for post in posts %} 
-    {% assign date = currentdate %}
+{% for post in posts %}
     {% include components/post-cat.html post=post link_title=true excerpt=true %}
 {% endfor %}
