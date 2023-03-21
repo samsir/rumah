@@ -9,8 +9,8 @@ author:
   name: Samsir
 
 # Fallback image and color
-image:  
-color:  '#4f86aa'
+image:  /assets/img/brand.png
+color:  '#14ac6c'
 
 # Site Brand
 brand: /assets/img/brand.svg
@@ -23,7 +23,7 @@ disqus: true
 disqus_shortname: samsiralam
 
 # This text will appear in the footer. Markdown enabled.
-copyright:  '&copy; 2023 &#124; samsiral.am'
+copyright:  '<3 samsiral.am'
 
 # Format of the permalinks
 permalink:  pretty
