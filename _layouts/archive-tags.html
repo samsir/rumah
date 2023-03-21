@@ -12,7 +12,7 @@ layout: default
 {% assign currentdate = post.date | date: "%Y" %}
 {% if currentdate != date %}
 {% if forloop.first %}<ul>{% endif %}
-    <h5 id="y{{post.date | date: " %Y"}}">{{ currentdate }}</h5>
+    <h5 id="y{{post.date | date: " %Y"}}" class="mt-4">{{ currentdate }}</h5>
     {% assign date = currentdate %}
     {% endif %}
     {% include components/post-list.html post=post format="%d %b" %}
