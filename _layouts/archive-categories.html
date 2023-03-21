@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign posts = site.categories[page.slug] %}
+{% assign posts = site.categories[page.slug] | sort: 'last_updated' | reverse %}
 
 {% if page.title.size > 0 %}
     <h3>{{ page.title }}</h3>
