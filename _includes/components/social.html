@@ -1,26 +1,5 @@
-{% assign platform = include.platform | downcase %}
-{% assign username = include.username %}
-{% assign icon = include.icon %}
-
-{% unless icon %}
-{% assign icon = platform %}
-{% endunless %}
-
-{% assign = data_social = site.data.social[icon] %}
-
-{% if username contains "//" %}
-{% assign url = username %}
-{% else %}
-{% assign url = username | prepend:data_social.prepend | append:data_soical.append %}
-{% endif %}
-
 <ul class="list-group list-group-flush">
   {% for link in include.social %}
-  <li class="list-group-item">
-    <a href="{{ url }}" class="text-decoration-none" target="_blank">
-      <span class="{{ data_social.icon  | default:'icon-link' }}" title="{{ data_social.name }}"></span>
-      {{ data_social.name }}
-    </a>
-  </li>
+  {% include components/social-list.html platform=link.first username=link.last %}
   {% endfor %}
 </ul>
