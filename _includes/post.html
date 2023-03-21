@@ -1,6 +1,6 @@
 {% assign post = include.post %}
 
-<article id="{{ post.id | slice: 1,9999 }}" class="post">
+<article id="{{ post.id | slice: 1,9999 }}" class="post mb-4">
   <header>
     <h1 class="pb-2">
       {% if include.link_title %}<a href="{{ post.url | relative_url }}" data-flip="title">{% endif %}
