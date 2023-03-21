@@ -59,10 +59,6 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
 
-# Format of the syntaxs
-markdown: kramdown
-highlighter: rouge
-
 # Minified stylesheet
 sass:
   style:  compressed
