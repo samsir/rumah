@@ -8,13 +8,10 @@
 
 {% if tags.size > 0 %}
 {% assign content = start_with %}
-{% for tag_slug in tags %}
 {% capture iter_separator %}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{% endcapture %}
 
-{% assign tag = meta | where: "slug", tag_slug | first %}
-
 {% if tag %}
-{% capture content_temp %}{{ content }}<a href="{{ tag.url | relative_url }}" data-flip="title">{{ tag.title }}</a>{{
+{% capture content_temp %}{{ content }}<a href="{{ site['jekyll-archives'].permalinks.category | replace: ':name', category | replace: ' ', '-' | downcase }}" data-flip="title">{{ tag.title }}</a>{{
 iter_separator }}{% endcapture %}
 {% else %}
 {% capture content_temp %}{{ content }}<span>{{ tag_slug | capitalize }}</span>{{ iter_separator }}{% endcapture %}
