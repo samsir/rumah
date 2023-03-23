@@ -11,12 +11,21 @@
 
   {% include components/message.html text=post.description %}
 
-  {% unless include.excerpt %}
-
-  {{ post.content }}
-  {% else %}
-  {{ post.excerpt }}
-  {% assign text_continue = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
+  <div class="{% if post.cover_photo %}col-sm-7{% else %}col-sm-12{% endif %}">
+    <div class="row">
+      <div class="col-md-12">
+        {% for category in post.categories %}
+          {% if category != post.categories.first %}
+            &middot;
+          {% endif %}
+          <a class="post-category" href="{{ site['jekyll-archives'].permalinks.category | replace: ':name', category | replace: ' ', '-' | downcase }}">{{ category }} </a>
+        {% endfor %}
+        <h2>
+          <a class="post-title-small" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-content">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
+      </div>
+    </div>
 
   <footer>
     <p>

@@ -44,13 +44,6 @@ collections:
   posts:
     permalink: /post/:title/
     output: true
-  archives:
-    permalink: /:path/
-    output: true
-    categories:
-      output: true
-    tags:
-      output: true
 
 jekyll-archives:
   enabled:
