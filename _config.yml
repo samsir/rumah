@@ -52,10 +52,20 @@ collections:
     tags:
       output: true
 
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    categories: archive-categories
+    tags: archive-tags
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
 # Plugin
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+  - jekyll-archives
   - jekyll-paginate
   - jekyll-seo-tag
 

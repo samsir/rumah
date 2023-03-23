@@ -12,4 +12,11 @@
   </a>
   {% endif %}
   {% include nav.html %}
+  {% for category in site.data.categories %}
+  {% capture category_slug %}{{ category | slugify }}{% endcapture %}
+  <li>
+    <a href="{{ site['jekyll-archives'].permalinks.category | replace: ':name', category_slug  }}">{{ category }}</a>
+  </li>
+  {% endfor %}
+
 </header>
