@@ -1,11 +1,11 @@
 ---  
 layout: post
-title: 1 Menulis Minimal
+title: "1 #30HariMenulisMinimal Kauniyah Iqra Oleh Raim Laode"
 subtitle: 
 categories: 30-hari-menulis-minimal menulis-minimal
 tags: 30harimenulisminimal menulisminimal
 comments: true
-cover-img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/LoremIpsumDesign.png"
+cover-img: "https://lh3.googleusercontent.com/pw/AMWts8BjgWR4sm7j_xY0Hnp7JrinGpgv_hG28DNyAQ5G3G5w5GcBKTVwsyeg_q2NsCRqox2rRhtEv52HFgHzWVzFGPcCKcavJO-xML-68DtE97hSf-FvIYqBGJwaCJEGY_kO1be4mZO3V0j6glz0ZRAIOR9E=w1740-h980-s-no?authuser=0"
 ---  
   
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Dalam sebuah podcast bersama Anji, Laode akrab disapa menyampaikan bahwa iqra secara harfiah disebut sebagai ayat kauniyah, dimana ayat-ayat kauniyah merupakan ayat-ayat tentang penggambaran kekuasaan Allah seperti manusia alam semesta, padahal definisi "Iqra" dikutip dari website Kemenag berarti bacalah, mengertilah, pahamilah, cerdaslah, berpikir majulah dan bervisilah. Hal ini terbukti, dengan iqro’ Nabi Muhammad mampu membangun umat Islam, umat yang diharapkan oleh Allah.
