@@ -1,4 +1,5 @@
 {% assign post = include.post %}
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 <article id="{{ post.id | slice: 1,9999 }}" class="post mb-4">
   <header>
@@ -10,6 +11,24 @@
     {% if page.subtitle %}
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
+
+
+    {% for author_id in authors %}
+    {% assign author = site.data.authors[author_id] %}
+    {% if author %}
+      <img class="post-author-thumbnail-large img-circle" src="{{ author.picture }}">
+    {% endif %}
+    {% endfor %} 
+    
+    {% for author_id in authors %}
+    {% assign author = site.data.authors[author_id] %}
+    {% if author %}
+      {% if author_id != authors.first %}
+        &middot;
+      {% endif %}
+      <a href="/authors#{{ author_id }}">{{ author.name }}</a>
+    {% endif %}
+    {% endfor %}
 
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
