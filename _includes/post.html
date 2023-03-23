@@ -12,11 +12,8 @@
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
 
-    {% if author %}
-      {% if author_id != authors.first %}
-        &middot;
-      {% endif %}
-      <a href="/authors#{{ author_id }}">{{ author.name }}</a>
+    {% if author.name %}
+    {% include author.html %}
     {% endif %}
 
     {% if author.picture %}
