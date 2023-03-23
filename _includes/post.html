@@ -18,6 +18,12 @@
 
   {% include components/message.html text=post.description %}
 
+  {% for tag_slug in post.tags %}
+  {% unless tag.cover-img %}
+  {% assign tag = site.data.tags %}
+  {% endunless %}
+  {% endfor %}
+
   {% unless include.excerpt %}
 
   {% if post.cover-img %}<img class="img-fluid mb-4" src="{{ post.cover-img }}" alt="{{ post.title }}">
