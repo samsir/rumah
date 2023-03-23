@@ -12,6 +12,10 @@
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
 
+    {% if author.name %}
+    {% include components/social.html %}
+    {% endif %}
+ 
     {% if author.picture %}
     {% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}
     {% endif %}
