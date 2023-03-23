@@ -1,5 +1,4 @@
 {% assign post = include.post %}
-{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 <article id="{{ post.id | slice: 1,9999 }}" class="post mb-4">
   <header>
@@ -12,13 +11,8 @@
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
 
-    {% if author.name %}
-    {% include author.html %}
-    {% endif %}
-
-    {% if author.picture %}
-    {% include srcset-img.html class="me" img=author.picture alt=author.name %}
-    {% endif %}
+    {% assign author = site.data.authors[page.author] %}
+    {% include  author.html %}
 
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
