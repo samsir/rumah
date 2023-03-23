@@ -2,6 +2,7 @@
 layout: post
 title: "Postingan Empat (4)"
 subtitle: "Subtitle posting empat (4)"
+authors: Samsir
 categories: kategori-2 kategori-4
 tags: tag-2 tag-4
 comments: true
