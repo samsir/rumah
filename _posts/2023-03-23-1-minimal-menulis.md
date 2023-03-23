@@ -1,9 +1,9 @@
 ---  
 layout: post
-title: "Postingan Satu (1)"
-subtitle: "Subtitle posting satu (1)"
-categories: [kategori-1]
-tags: tag-1 tag-2
+title: 1 Menulis Minimal
+subtitle: 
+categories: 30-hari-menulis-minimal menulis-minimal
+tags: 30harimenulisminimal menulisminimal
 comments: true
 cover-img: "https://upload.wikimedia.org/wikipedia/commons/4/4c/LoremIpsumDesign.png"
 ---  
