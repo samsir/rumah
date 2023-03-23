@@ -15,23 +15,17 @@
     {% assign authors = post.authors %}
     
     {% for author_id in post.authors %}
-      {% assign author = site.data.authors[author_id] %}
       {% if author %}
         <img class="post-author-thumbnail img-circle" src="{{ author.picture }}">
       {% endif %}
-    {% endfor %}
 
-    <div class="post-meta-container">
-      <span class="post-author">
-        {% for author_id in post.authors %}
-          {% assign author = site.data.authors[author_id] %}
-          {% if author %}
-            {% if author_id != post.authors.first %}
-              &middot;
-            {% endif %}
-            <a href="/authors#{{ author_id }}">{{ author.name }}</a>
-          {% endif %}
-        {% endfor %}
+      {% if author %}
+        {% if author_id != post.authors.first %}
+          &middot;
+        {% endif %}
+          <a href="/authors#{{ author_id }}">{{ author.name }}</a>
+        {% endif %}
+    {% endfor %}
 
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
