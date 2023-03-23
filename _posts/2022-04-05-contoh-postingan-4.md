@@ -1,7 +1,7 @@
 ---  
 layout: post
 title: "Postingan Empat (4)"
-subtitle: "posting empat (4)"
+subtitle: "Subtitle posting empat (4)"
 categories: kategori-2 kategori-4
 tags: tag-2 tag-4
 comments: true

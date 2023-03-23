@@ -1,7 +1,7 @@
 ---  
 layout: post
 title: "Postingan Satu (1)"
-subtitle: "posting satu (1)"
+subtitle: "Subtitle posting satu (1)"
 categories: [kategori-1]
 tags: tag-1 tag-2
 comments: true
