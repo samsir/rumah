@@ -12,7 +12,7 @@
     {% endif %}
 
     {% assign author = site.data.authors[page.author] %}
-    {% include  author.html %}
+    {% include author.html %}
 
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
