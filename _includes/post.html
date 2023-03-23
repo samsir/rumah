@@ -7,6 +7,9 @@
         {{ post.title }}
         {% if include.link_title %}</a>{% endif %}
     </h1>
+    {% if page.subtitle %}
+    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
 
     <p class="text-muted">
       <span class="me-2"><i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
