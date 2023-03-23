@@ -1,4 +1,5 @@
 {% assign post = include.post %}
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 <article id="{{ post.id | slice: 1,9999 }}" class="post mb-4">
   <header>
