@@ -44,21 +44,18 @@ collections:
   posts:
     permalink: /post/:title/
     output: true
-
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layouts:
-    categories: archive-categories
-    tags: archive-tags
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+  archives:
+    permalink: /:path/
+    output: true
+    categories:
+      output: true
+    tags:
+      output: true
 
 # Plugin
 plugins:
-  - jekyll-archives
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
 
