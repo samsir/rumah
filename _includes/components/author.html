@@ -1,15 +1,21 @@
 {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 <div class="card">
-  {% if include.author.picture %}
-  {% include components/srcset-img.html class="img-fluid" img=include.author.picture alt=include.author.name %}
-  {% endif %}
-<div class="card-body">
-  <{{ include.heading_tag | default:'h2' }} class="card-title">
-    {{ include.heading | default:include.author.name }}
-  </{{ include.heading_tag | default:'h2' }}>
-    <p class="card-text">
-      {{ include.author.about | markdownify | remove '<p>' remove '</p>' }}
-    </p>
+  <div class="row">
+    <div class="col-md-4">
+      {% if include.author.picture %}
+      {% include components/srcset-img.html class="img-fluid" img=include.author.picture alt=include.author.name %}
+      {% endif %}
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <{{ include.heading_tag | default:'h2' }} class="card-title">
+          {{ include.heading | default:include.author.name }}
+        </{{ include.heading_tag | default:'h2' }}>
+        <p class="card-text">
+          {{ include.author.about | markdownify | remove '<p>' remove '</p>' }}
+        </p>
+      </div>
+    </div>
   </div>
 </div>
