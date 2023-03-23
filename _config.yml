@@ -2,7 +2,6 @@
 title:  samsiral.am
 description:  > # this means to ignore newlines until "baseurl:"
 url:  https://samsiral.am # the base hostname & protocol for your site
-baseurl: ""  # the subpath of your site, e.g. /blog
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
