@@ -2,14 +2,14 @@
 
 <div class="card">
   {% if include.author.picture %}
-  {% include components/srcset-img.html class="img-thumbnail" img=include.author.picture alt=include.author.name %}
+  {% include components/srcset-img.html class="img-fluid" img=include.author.picture alt=include.author.name %}
   {% endif %}
 <div class="card-body">
   <{{ include.heading_tag | default:'h2' }} class="card-title">
     {{ include.heading | default:include.author.name }}
   </{{ include.heading_tag | default:'h2' }}>
     <p class="card-text">
-      {{ include.author.about | markdownify }}
+      {{ include.author.about | markdownify | remove '<p>' remove '</p>' }}
     </p>
   </div>
 </div>
