@@ -13,7 +13,7 @@
           {{ include.heading | default:include.author.name }}
         </{{ include.heading_tag | default:'h2' }}>
         <p class="card-text">
-          {{ include.author.about | markdownify | remove '<p>' remove '</p>' }}
+          {{ include.author.about | markdownify }}
         </p>
       </div>
     </div>
