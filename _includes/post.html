@@ -12,10 +12,6 @@
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
 
-    {% if author.name %}
-      {% include components/author.html author=author %}
-    {% endif %}
-
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
           post.date | date: "%d %b %Y" }}</time>
