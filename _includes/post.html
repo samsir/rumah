@@ -11,8 +11,22 @@
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
 
-    {% assign author = site.data.authors[page.author] %}
-    {% include author.html %}
+    {% for author_id in authors %}
+    {% assign author = site.data.authors[author_id] %}
+    {% if author %}
+    {% include srcset-img.html class="me" img=author.picture alt=author.name %}
+    {% endif %}
+    {% endfor %}
+
+    {% for author_id in authors %}
+      {% assign author = site.data.authors[author_id] %}
+      {% if author %}
+        {% if author_id != authors.first %}
+          &middot;
+        {% endif %}
+        <a href="/authors#{{ author_id }}">{{ author.name }}</a>
+      {% endif %}
+    {% endfor %}
 
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
