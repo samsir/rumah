@@ -12,7 +12,7 @@
     {% endif %}
 
     <p class="text-muted">
-      <i class="bi bi-clock me-1"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
+      <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
           post.date | date: "%d %b %Y" }}</time>
       <i class="bi bi-archive ms-2"></i> {% include components/post-meta.html tags=post.categories meta=site.archives
       separator=" / " %}
