@@ -1,4 +1,5 @@
 {% assign post = include.post %}
+{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
 <article id="{{ post.id | slice: 1,9999 }}" class="post mb-4">
   <header>
@@ -11,11 +12,9 @@
     <h5 class="text-muted pb-2">{{ page.subtitle }}</h5>
     {% endif %}
 
-    {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
-
     {% if author.about %}
       <aside class="author" role="complementary">
-        {% include author.html author=author heading='About' heading_tag='h2' %}
+        {% include components/author.html author=author heading='About' heading_tag='h2' %}
       </aside>
     {% endif %}
 
