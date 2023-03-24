@@ -4,5 +4,5 @@ title: menulisminimal
 slug: menulisminimal
 category: menulis-minimal
 menu: false
-order: 2
+order: 3
 ---
