@@ -2,7 +2,7 @@
 layout: post
 title: "1 #30HariMenulisMinimal Kauniyah Iqra Oleh Raim Laode"
 subtitle: 
-categories: 30-hari-menulis-minimal menulis-minimal
+categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags: 30harimenulisminimal menulisminimal
 comments: true
 cover-img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*HjnQKQGjeEA7BwJh6vOn0A.png"

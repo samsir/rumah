@@ -2,7 +2,7 @@
 layout: post
 title: "2 #30HariMenulisMinimal Kembali #MenulisMinimal"
 subtitle: 
-categories: 30-hari-menulis-minimal menulis-minimal
+categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags: 30harimenulisminimal menulisminimal
 comments: true
 cover-img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*iLESNLYC5FDCXuf37crrjA.png"
