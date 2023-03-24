@@ -8,7 +8,7 @@
     {{ site.tagline | truncatewords:50 | markdownify }}
   </div>
 
-  {% if author.name %}
+  {% if author.picture %}
     {% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}
   {% endif %}
 

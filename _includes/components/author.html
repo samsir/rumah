@@ -15,6 +15,9 @@
         <p class="card-text">
           {{ include.author.about | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
+        {% if author.social %}
+        {% include components/social.html social=author.social %}
+        {% endif %}    
       </div>
     </div>
   </div>
