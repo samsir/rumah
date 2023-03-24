@@ -18,7 +18,7 @@ brand: /assets/img/brand.svg
 # google_analytics: 
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
-disqus: true
+disqus: false
 disqus_shortname: samsiralam
 
 # This text will appear in the footer. Markdown enabled.
