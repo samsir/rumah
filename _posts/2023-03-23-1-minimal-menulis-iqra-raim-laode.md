@@ -1,6 +1,6 @@
 ---  
 layout: post
-title: "1 #30HariMenulisMinimal Kauniyah Iqra Oleh Raim Laode"
+title: "1 Kauniyah Iqra Oleh Raim Laode -  #30HariMenulisMinimal"
 subtitle: 
 categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags: 30harimenulisminimal menulisminimal
