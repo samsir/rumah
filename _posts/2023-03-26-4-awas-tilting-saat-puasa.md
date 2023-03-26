@@ -10,4 +10,4 @@ cover-img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*IEviy_opKbv
 
 Tips supaya kamu ngga ngetilt saat sedang berpuasa ialah perbanyak sabar, memuji Asma Allah, berbuat baik, beramal saleh dan perbanyak tadarus Al-Quran. Ngomong-ngomong apa sih Tilting itu, mari kita cari tahu.
 
-[Lanjut baca di Medium](https://link.medium.com/IBGdtf3Qoyb)
+[Lanjut baca di Medium](https://link.medium.com/xyCZd5lZtyb)
