@@ -1,13 +1,13 @@
 {% unless include.link_title %}
 <div class="d-flex justify-content-end mb-4">
   <h5 class="me-2">SHARE : </h5>
-  <a class="me-2" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}">
+  <a class="me-2" href="http://twitter.com/share?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
     <i class="bi bi-twitter"></i>
   </a>
-  <a class="me-2" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}">
+  <a class="me-2" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
     <i class="bi bi-facebook"></i>
   </a>
-  <a href="whatsapp://send?text={{ page.title }}+{{ site.url }}{{ page.url }}">
+  <a href="whatsapp://send?text={{ page.title }}+{{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
     <i class="bi bi-whatsapp"></i>
   </a>
 </div>
