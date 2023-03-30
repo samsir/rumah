@@ -5,7 +5,7 @@ subtitle:
 categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags:  30harimenulisminimal menulisminimal
 comments: true
-cover-img: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*ed76XbXUno3Er5HW80OBag.jpeg"
+cover-img: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*puYyGVnk46aDUpQDs5e0gA.jpeg"
 ---
 
 Bertambah tingginya badan ini
