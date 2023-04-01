@@ -9,13 +9,20 @@ cover-img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*4h8hOBqm31E
 ---
 
 Sembilan bulan..
+
 Tak ada terang selain harapan
+
 Tak ada harapan selain tuhan
+
 Tak ada mati selain kegelisahan
 
+
 Selain hidup, memuja dan menua
+
 Apalah arti kata kerja agama
+
 Selain mati, sendiri dan sepi
+
 Adakah arti teman dekat hati
 
 [Lanjut baca di Medium](https://link.medium.com/KDKFAxJBDyb)
