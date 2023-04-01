@@ -9,13 +9,20 @@ cover-img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*MfIZ-JYqFt9
 ---
 
 Bertambah tingginya badan ini
+
 Bertumbuh panjangnya bulu itu
+
 Lihatlah tak ada yang abadi
+
 Sadarlah ternyata bukan halu
 
+
 Rasa bukan sekadar imaji
+
 Merasa gondrong pun malu
+
 Didepan manusia ingin tampil seksi
+
 Menghadap tuhan tak punya malu
 
 [Lanjut baca di Medium](https://link.medium.com/Lk2dyDbKAyb)
