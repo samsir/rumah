@@ -10,7 +10,6 @@ cover-img: https://samsiral.am/assets/img/brand.png
     {% include components/message.html text=page.description %}
 {% endif %}
 
-{% for post in paginator.posts %}
+{% for post in posts %}
     {% include components/post-cat.html post=post link_title=true excerpt=true %}
 {% endfor %}
-{% include pagination.html %}
