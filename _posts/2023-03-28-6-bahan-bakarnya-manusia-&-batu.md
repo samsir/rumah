@@ -1,6 +1,6 @@
 ---  
 layout: post
-title: "6 Bahan Bakarnya Manusia dan Batu - #30HariMenulisMinimal"
+title: "6 Bahan Bakarnya Manusia dan Batu — #30HariMenulisMinimal"
 subtitle: 
 categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags: 30harimenulisminimal menulisminimal

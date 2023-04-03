@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "12 Silaturahim Konvensional Masa Kini, Akhir-akhir Ini - #30HariMenulisMinimal"
+title: "12 Silaturahim Konvensional Masa Kini, Akhir-akhir Ini — #30HariMenulisMinimal"
 subtitle:
 categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags: 30harimenulisminimal menulisminimal

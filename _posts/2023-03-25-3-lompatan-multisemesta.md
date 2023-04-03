@@ -1,6 +1,6 @@
 ---  
 layout: post
-title: "3 Lompatan Multisemesta - #30HariMenulisMinimal"
+title: "3 Lompatan Multisemesta — #30HariMenulisMinimal"
 subtitle: 
 categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags: 30harimenulisminimal menulisminimal

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10 Kauniyah li i’lai kalimatillah - #30HariMenulisMinimal"
+title: "10 Kauniyah li i’lai kalimatillah — #30HariMenulisMinimal"
 subtitle:
 categories: 30-hari-menulis-minimal menulis-minimal menulis
 tags:  30harimenulisminimal menulisminimal
