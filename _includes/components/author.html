@@ -1,10 +1,10 @@
 {% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] %}
 
-<div class="card">
+<div class="card border-0">
   <div class="row">
     <div class="col-md-4">
       {% if include.author.picture %}
-      {% include components/srcset-img.html class="img-fluid rounded-start" img=include.author.picture alt=include.author.name %}
+      {% include components/srcset-img.html class="img-fluid" img=include.author.picture alt=include.author.name %}
       {% endif %}
     </div>
     <div class="col-md-8">
