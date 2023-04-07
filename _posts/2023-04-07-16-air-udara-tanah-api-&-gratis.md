@@ -10,4 +10,4 @@ cover-img: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*JBZoVFrAtah
 
 Air, udara, tanah dan api merupakan elementum yang dipelajari oleh Aang di film The Legend Of Aang;安昂, Avatar. Aang sendiri merupakan generasi terakhir dari elemen udara, Avatar: The last Airbender, ia ditakdirkan mendamaikan dunia, tapi saat dunia membutuhkan, dia (Avatar) menghilang. Film ini merupakan salah satu film kesukaan saya, film ini pun merupakan film yang sangat memberi saya banyak pelajaran
 
-[Lanjut baca di Medium](https://link.medium.com/mL0yjbfALyb)
+[Lanjut baca di Medium](https://link.medium.com/ykvozz6hNyb)
