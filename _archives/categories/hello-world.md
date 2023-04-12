@@ -4,7 +4,7 @@ title: Hello World
 slug: hello-world
 menu: true
 submenu: false
-order: 4
+order: 2
 description: >
   "Sebagian besar isi postingan adalah tulisan."
 ---
