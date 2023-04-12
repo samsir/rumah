@@ -1,7 +1,7 @@
 ---
 layout: archive-categories
-title: Menulis
-slug: menulis
+title: Hello World
+slug: hello-world
 menu: true
 submenu: false
 order: 4
