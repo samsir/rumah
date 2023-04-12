@@ -15,8 +15,10 @@
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
           post.date | date: "%d %b %Y" }}</time>
+      {% if post.categories %}
       <i class="bi bi-archive ms-2"></i> {% include components/post-meta.html tags=post.categories meta=site.archives
       separator=" / " %}
+      {% endif %}
     </p>
   </header>
 
@@ -35,12 +37,14 @@
   <img class="img-fluid mb-4" src="{{ tag.cover-img }}" alt="{{ post.title }}">
   {% endif %}
   {{ post.content }}
+  {% if post.tags %}
   <footer>
     <p class="text-muted">
       <i class="bi bi-tags"></i> {% include components/post-meta.html tags=post.tags meta=site.archives separator=", "
       %}
     </p>
   </footer>
+  {% endif %}
   {% else %}
   {{ post.excerpt }}
   {% assign text_continue = site.data.strings.continue_reading | default:"Continue reading <!--post_title-->" %}
