@@ -15,7 +15,7 @@
     <p class="text-muted">
       <i class="bi bi-clock"></i> <time datetime="{{ post.date | date_to_xmlschema }}">{{
           post.date | date: "%d %b %Y" }}</time>
-      {% if post.categories %}
+      {% if tag.categories %}
       <i class="bi bi-archive ms-2"></i> {% include components/post-meta.html tags=post.categories meta=site.archives
       separator=" / " %}
       {% endif %}
@@ -37,7 +37,7 @@
   <img class="img-fluid mb-4" src="{{ tag.cover-img }}" alt="{{ post.title }}">
   {% endif %}
   {{ post.content }}
-  {% if post.tags %}
+  {% if tag.tags %}
   <footer>
     <p class="text-muted">
       <i class="bi bi-tags"></i> {% include components/post-meta.html tags=post.tags meta=site.archives separator=", "
