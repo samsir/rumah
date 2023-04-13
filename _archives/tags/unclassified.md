@@ -2,7 +2,7 @@
 layout: archive-tags
 title: Unclassified
 slug: unclassified
-category: unclassified
+category: uncategorized
 menu: false
 order: 1
 ---

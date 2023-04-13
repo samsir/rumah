@@ -1,8 +1,8 @@
 ---
 layout: archive-categories
-title: Unclassified
-slug: unclassified
-menu: false
+title: Uncategorized
+slug: uncategorized
+menu: true
 submenu: false
 order: 1
 description: >
