@@ -1,6 +1,6 @@
 //  initialize tooltip
 <script>
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-bs-toggle="tooltip"]').tooltip()
 })
 </script>
