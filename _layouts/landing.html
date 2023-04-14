@@ -18,7 +18,7 @@
           <div class="row">
             <div class="col-md-5">
               {% if author.picture %}
-              <button type="button" data-bs-toggle="modal" data-bs-target="#cvModal" class="btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#cvModal" class="btn btn-link" title="Click to see my resume">
                 {% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}
               </button>
               {% endif %}
@@ -48,7 +48,7 @@
                   <tr>
                     <th scope="row" class="border-0">Nama</th>
                     <td class="border-0">:</td>
-                    <td class="border-0"><a href="https://about.me/samsiralam" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="https://about.me/samsiralam">{{ site.title
+                    <td class="border-0"><a href="https://about.me/samsiralam" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="about.me/samsiralam">{{ site.title
                         }}</a> <i class="bi bi-box-arrow-up-right"></i></td>
                   </tr>
                   <tr>
