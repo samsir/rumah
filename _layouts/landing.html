@@ -18,7 +18,7 @@
           <div class="row">
             <div class="col-md-5">
               {% if author.picture %}
-              <button type="button" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Click to see my resume">
+              <button type="button" class="btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume">
                 <span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}</span>
               </button>
               {% endif %}
