@@ -5,15 +5,7 @@ cover-img: https://samsiral.am/assets/img/brand.png
 ---
 
 <div class="col-sm-8">
-  <div class="container mt-5 pt-5" id="medium">
-    <div class="jumbotron text-center">
-        <div id="logo"></div>
-        <h1 class="display-4 mb-3">@samsir Posts</h1>
-        <a class="btn btn-outline-primary btn-lg" href="https://medium.com/@samsir" target="_blank" role="button">View all posts</a>
-    </div>
-    <div class="row" id="jsonContent">
-    </div>
-</div>
+  <div class="row" id="jsonContent"></div>
   {% for post in paginator.posts %}
   {% include post.html post=post link_title=true excerpt=true %}
   {% endfor %}
