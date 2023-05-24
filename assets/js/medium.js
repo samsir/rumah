@@ -8,10 +8,10 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card mb-3">`;
+                display += `<div class="card mb-4">`;
                 display += `<div class="row g-0">`;
                 var src = item["thumbnail"]; // use thumbnail url
-                display += `<div class="col-md-4">`;
+                display += `<div class="col-md-3">`;
                 display += `<img src="${src}" class="img-fluid rounded-start" alt="Cover image">`;
                 display += `</div>`;
                 display += `<div class="col-md-9">`;
