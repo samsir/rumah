@@ -8,13 +8,13 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card mb-4">`;
+                display += `<div class="card mb-3">`;
                 display += `<div class="row g-0">`;
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<div class="col-md-4">`;
                 display += `<img src="${src}" class="img-fluid rounded-start" alt="Cover image">`;
                 display += `</div>`;
-                display += `<div class="col-md-8">`;
+                display += `<div class="col-md-9">`;
                 display += `<div class="card-body">`;
                 display += `<h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
