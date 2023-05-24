@@ -18,8 +18,6 @@ $(function () {
                 display += `<div class="card-body">`;
                 display += `<h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
-                yourString = yourString.replace('figure', '');
-                yourString = yourString.replace('figcaption', '');
                 var maxLength = 123; // maximum number of characters to extract
                 //trim the string to the maximum length
                 var trimmedString = yourString.substr(0, maxLength);
