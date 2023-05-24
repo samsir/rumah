@@ -8,7 +8,7 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card mb-3">`;
+                display += `<div class="card mb-4">`;
                 display += `<div class="row g-0">`;
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<div class="col-md-4">`;
