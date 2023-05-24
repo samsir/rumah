@@ -12,7 +12,7 @@ $(function () {
                 display += `<div class="row g-0">`;
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<div class="col-md-4">`;
-                display += `<img src="${src}" class="img-fluid" alt="Cover image">`;
+                display += `<img src="${src}" class="img-fluid rounded-start" alt="Cover image">`;
                 display += `</div>`;
                 display += `<div class="col-md-8">`;
                 display += `<div class="card-body">`;
@@ -20,7 +20,7 @@ $(function () {
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
                 yourString = yourString.replace('h4', 'p');
                 yourString = yourString.replace('h3', 'p');
-                var maxLength = 234; // maximum number of characters to extract
+                var maxLength = 123; // maximum number of characters to extract
                 //trim the string to the maximum length
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
