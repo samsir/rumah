@@ -9,10 +9,14 @@ $(function () {
             var display = '';
             $.each(response.items, function (k, item) {
                 display += `<div class="card mb-3">`;
+                display += `<div class="row g-0">`;
                 var src = item["thumbnail"]; // use thumbnail url
-                display += `<img src="${src}" class="card-img-top" alt="Cover image">`;
+                display += `<div class="col-md-4">`;
+                display += `<img src="${src}" class="img-fluid" alt="Cover image">`;
+                display += `</div>`;
+                display += `<div class="col-md-8">`;
                 display += `<div class="card-body">`;
-                display += `<h5 class="card-title"><a href="${item.link}">${item.title}</a></h5>`;
+                display += `<h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
                 yourString = yourString.replace('h4', 'p');
                 yourString = yourString.replace('h3', 'p');
@@ -23,7 +27,7 @@ $(function () {
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
                 
-                display += '</div></div>';
+                display += '</div></div></div></div>';
                 return k < 10;
             });
 
