@@ -16,6 +16,7 @@ $(function () {
                 display += `</div>`;
                 display += `<div class="col-md-9">`;
                 display += `<div class="card-body">`;
+                display += `<span class="text-muted">${item.pubDate}</span>`;
                 display += `<h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
                 var maxLength = 123; // maximum number of characters to extract
@@ -24,7 +25,6 @@ $(function () {
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
-                display += `<span class="text-muted">${item.pubDate}</span>`;
                 
                 display += '</div></div></div></div>';
                 return k < 10;
