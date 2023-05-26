@@ -37,7 +37,7 @@ mediumPromise.then(function()
         var pageCount = $(".card").length / pageSize;
 
         for (var i = 0; i < pageCount; i++) {
-            $("#pagin").append(`<li class="page-item"><a class="page-link" href="#">${(i + 1)}</a></li> `);
+            $("#pagin").append(`<li class="page-item"><a class="page-link" href="#">${(i + 1)}</a></li>`);
         }
         $("#pagin li:nth-child(1)").addClass("active");
         showPage = function (page) {
