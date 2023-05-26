@@ -8,11 +8,11 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card mb-4">`;
+                display += `<div class="card rounded-0 mb-4">`;
                 display += `<div class="row g-0">`;
                 var src = item["thumbnail"]; // use thumbnail url
                 display += `<div class="col-md-3">`;
-                display += `<a href="${item.link}"><img src="${src}" class="img-fluid rounded-start" alt="Cover image"></a>`;
+                display += `<a href="${item.link}"><img src="${src}" class="img-fluid" alt="Cover image"></a>`;
                 display += `</div>`;
                 display += `<div class="col-md-9">`;
                 display += `<div class="card-body">`;
