@@ -17,14 +17,12 @@ $(function () {
                 display += `<div class="col-md-9">`;
                 display += `<div class="card-body">`;
                 display += `<h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
-                var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
-                var maxLength = 129; // maximum number of characters to extract
-                //trim the string to the maximum length
-                var trimmedString = yourString.substr(0, maxLength);
-                //re-trim if we are in the middle of a word
-                trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
-                display += `<p class="card-text">${trimmedString}...</p>`;
-                
+                display += ' <p>'
+                var categories = item["categories"];
+                for (var i=0; i<categories.length; i++){
+                  display += ` <a href="#"><i>#${categories[i]}</i></a> &nbsp;`
+                }
+                display += ' </p>'
                 display += '</div></div></div></div>';
                 return k < 10;
             });
