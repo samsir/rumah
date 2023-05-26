@@ -8,14 +8,11 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card rounded-0 mb-4">`;
-                display += `<div class="row g-0">`;
+                display += `<div class="card rounded-0 mb-4"><div class="row g-0"><div class="col-md-3">`;
                 var src = item["thumbnail"]; // use thumbnail url
-                display += `<div class="col-md-3">`;
                 display += `<a href="${item.link}"><img src="${src}" class="img-fluid" alt="Cover image"></a>`;
                 display += `</div>`;
-                display += `<div class="col-md-9">`;
-                display += `<div class="card-body">`;
+                display += `<div class="col-md-9"><div class="card-body">`;
                 display += `<h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
                 var maxLength = 129; // maximum number of characters to extract
