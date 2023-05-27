@@ -23,6 +23,9 @@
         {% assign sublinks = entry.sublinks %}
         {% if sublinks %}
         <li class="nav-item dropdown">
+            <a class="nav-link d-inline" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
             <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}
                 <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
@@ -35,8 +38,8 @@
         </li>
         {% else %}
         <li{{ current }}><a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-            </li>
-            {% endif %}
-            {% endfor %}
+        </li>
+        {% endif %}
+        {% endfor %}
     </ul>
 </nav>
