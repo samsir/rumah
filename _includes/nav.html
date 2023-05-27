@@ -10,6 +10,9 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar1">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link d-inline-block" href="{{ node.url | relative_url }}">Blog</a>
+        </li>
         {% assign pages = site.pages %}
         {% for document in site.documents %}
         {% assign pages = pages | push: document %}

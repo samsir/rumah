@@ -13,9 +13,6 @@
 -->
 <nav class="navbar navbar-expand d-flex" role="navigation">
     <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-            <a class="nav-link d-inline" href="/blog">Blog</a>
-        </li>
         {% for entry in site.data.menu %}
         {% if entry.url == current_page %}
         {% assign current = ' class="nav-item active"' %}
