@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "Posts"
+title: Posts
+menu: true
+order: 13
 cover-img: https://samsiral.am/assets/img/brand.png
 ---
 
