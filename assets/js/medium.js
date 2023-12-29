@@ -2,7 +2,7 @@ $(function () {
     var mediumPromise = new Promise(function (resolve) {
     var $content = $('#jsonContent');
     var data = {
-        rss: 'https://medium.com/feed/@samsir'
+        rss: 'https://samsir.medium.com/feed'
     };
     $.get(' https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fsamsir.medium.com%2Ffeed', data, function (response) {
         if (response.status == 'ok') {
