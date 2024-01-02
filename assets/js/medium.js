@@ -4,7 +4,7 @@ $(function () {
     var data = {
         rss: 'https://samsir.medium.com/feed'
     };
-    $.get(' https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fsamsir.medium.com%2Ffeed', data, function (response) {
+    $.get('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fsamsir.medium.com%2Ffeed', data, function (response) {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
