@@ -8,16 +8,23 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card rounded-0 mb-4">`;
-                display += `<div class="card-body"><h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
+                display += `<div class="card rounded-0 mb-4"><div class="row g-0"><div class="col-md-3">`;
+                var tagIndex = item.description.indexOf('<img'); // Find where the img tag starts
+                var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
+                var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
+                var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
+                var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
+                display += `<a href="${item.link}"><img src="${src}" class="img-fluid" alt="Cover image"></a>`;
+                display += `</div>`;
+                display += `<div class="col-md-9"><div class="card-body"><h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
-                var maxLength = 269; // maximum number of characters to extract
+                var maxLength = 129; // maximum number of characters to extract
                 //trim the string to the maximum length
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
-                display += '</div></div>';
+                display += '</div></div></div></div>';
                 return k < 12;
             });
 
