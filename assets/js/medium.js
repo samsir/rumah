@@ -18,7 +18,7 @@ $(function () {
                 display += `</div>`;
                 display += `<div class="col-md-9"><div class="card-body"><h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
-                var maxLength = 129; // maximum number of characters to extract
+                var maxLength = 269; // maximum number of characters to extract
                 //trim the string to the maximum length
                 var trimmedString = yourString.substr(0, maxLength);
                 //re-trim if we are in the middle of a word
