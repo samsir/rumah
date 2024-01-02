@@ -8,8 +8,7 @@ $(function () {
         if (response.status == 'ok') {
             var display = '';
             $.each(response.items, function (k, item) {
-                display += `<div class="card rounded-0 mb-4"><div class="row g-0">`;
-                display += `</div>`;
+                display += `<div class="card rounded-0 mb-4">`;
                 display += `<div class="col-md-12"><div class="card-body"><h2 class="card-title"><a href="${item.link}">${item.title}</a></h2>`;
                 var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
                 var maxLength = 129; // maximum number of characters to extract
@@ -18,7 +17,7 @@ $(function () {
                 //re-trim if we are in the middle of a word
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
-                display += '</div></div></div></div>';
+                display += '</div></div></div>';
                 return k < 12;
             });
 
