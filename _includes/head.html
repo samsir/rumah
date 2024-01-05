@@ -9,13 +9,11 @@
   <meta property="fb:admins" content="100002414921993">
   <meta property="og:image:width" content="560" />
   <meta property="og:image:height" content="560" />
-
   {% for tag_slug in page.tags %}
   {% unless tag.cover-img %}
   {% assign tag = site.featured_tags | where: "slug", tag_slug | first %}
   {% endunless %}
   {% endfor %}
-
   {% if page.cover-img %}
   <meta property="og:image" content="{{ page.cover-img }}">
   {% elsif tag.cover-img %}
@@ -23,7 +21,6 @@
   {% else %}
   <meta property="og:image" content="{{ site.url }}/assets/img/ava.png">
   {% endif %}
-
   {% if page.description.size > 0 %}
   {% assign description = page.description | markdownify %}
   {% elsif page.excerpt.size > 0 %}
@@ -31,7 +28,6 @@
   {% else %}
   {% assign description = site.description | markdownify %}
   {% endif %}
-
   {% if site.keywords or page.keywords %}
   <meta name="keywords" content="{{ site.keywords | default: page.keywords | join:',' }}">
   {% endif %}
@@ -51,19 +47,15 @@
   -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }} Feed"
     href="{{ site.feed.path | default:'feed.xml' | absolute_url }}">
-
   {% if page.previous %}
   <link rel="prev" href="{{ page.previous.url | absolute_url }}">
   {% endif %}
-
   {% if page.next %}
   <link rel="next" href="{{ page.next.url | absolute_url }}">
   {% endif %}
-
   <!-- Place favicon.ico in the root directory -->
   <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | prepend: site.baseurl }}">
   <link rel="apple-touch-icon" href="{{ 'apple-touch-icon.png' | absolute_url }}">
-
   <!--[if lt IE 9]>
   <script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
   <![endif]-->
