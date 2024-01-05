@@ -6,8 +6,6 @@
         <a href="{{ post.url | relative_url }}" class="flip-title">
             <h3 class="d-inline">{{ post.title }}</h3>
         </a>
-        <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">
-            {{ post.date | date:format }}
-        </time>
+        <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
     </li>
 </ul>
