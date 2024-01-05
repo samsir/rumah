@@ -23,22 +23,14 @@
         {% for node in pages %}
         {% assign count = count | plus: 1 %}
         <li class="nav-item dropdown">
-          <a id="{{ count }}" class="nav-link d-inline-block" href="{{ node.url | relative_url }}">{{ node.title }}
-            {% if node.submenu %}
-            <a for="{{ count }}" class="dropdown-toggle ps-md-0 px-2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-            {% endif %}
-          </a>
-          {% for subnode in subpages %}
-          {% if subnode.category == node.slug %}
+          <a id="{{ count }}" class="nav-link d-inline-block" href="{{ node.url | relative_url }}">{{ node.title }}{% if node.submenu %}
+            <a for="{{ count }}" class="dropdown-toggle ps-md-0 px-2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>{% endif %}
+          </a>{% for subnode in subpages %}{% if subnode.category == node.slug %}
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{ subnode.url | relative_url }}">{{ subnode.title }}</a></li>
-          </ul>
-          {% endif %}
-          {% endfor %}
-        </li>
-        {% endfor %}
-      </ul>
-      {% include components/search-box.html %}
+          </ul>{% endif %}{% endfor %}
+        </li>{% endfor %}
+      </ul>{% include components/search-box.html %}
     </div>
   </div>
 </nav>
