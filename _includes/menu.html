@@ -17,14 +17,14 @@
         {% assign current = null %}{% endif %}{% assign sublinks = entry.sublinks %}{% if sublinks %}
         <li class="nav-item dropdown">
             <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}
-                <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
+                <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">{% for sublink in sublinks %}
                 <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>{% endfor %}
             </div>
         </li>{% else %}
-        <li{{ current }}><a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+        <li{{ current }}>
+            <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
         </li>{% endif %}{% endfor %}
     </ul>
 </nav>
