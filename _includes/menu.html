@@ -12,31 +12,19 @@
   Navigation Menu
 -->
 <nav class="navbar navbar-expand d-flex" role="navigation">
-    <ul class="navbar-nav">
-        {% for entry in site.data.menu %}
-        {% if entry.url == current_page %}
-        {% assign current = ' class="nav-item active"' %}
-        {% else %}
+    <ul class="navbar-nav">{% for entry in site.data.menu %}{% if entry.url == current_page %}{% assign current = ' class="nav-item active"' %}{% else %}
         <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-        {% assign current = null %}
-        {% endif %}
-        {% assign sublinks = entry.sublinks %}
-        {% if sublinks %}
+        {% assign current = null %}{% endif %}{% assign sublinks = entry.sublinks %}{% if sublinks %}
         <li class="nav-item dropdown">
             <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}
                 <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                {% for sublink in sublinks %}
-                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                {% endfor %}
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">{% for sublink in sublinks %}
+                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>{% endfor %}
             </div>
-        </li>
-        {% else %}
+        </li>{% else %}
         <li{{ current }}><a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
+        </li>{% endif %}{% endfor %}
     </ul>
 </nav>
