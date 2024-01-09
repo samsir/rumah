@@ -5,15 +5,12 @@
 
 <aside class="col-sm-4" role="complementary">
   <div class="sticky-top">
-    <div class="card-text">
-      {{ site.tagline | truncatewords:50 | markdownify }}
-    </div>
-
     {% if author.picture %}
     {% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}
     {% endif %}
 
     <div class="card-text">
+      {{ site.tagline | truncatewords:50 | markdownify }}
       {{ site.description | truncatewords:50 | markdownify }}
       {% assign author = site.data.authors.first[1] %}
     </div>
