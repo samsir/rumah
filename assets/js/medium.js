@@ -1,6 +1,6 @@
 $(function () {
     var mediumPromise = new Promise(function (resolve) {
-    var $content = $('#jsonContent');
+    var $content = $('#jsonMedium');
     var data = {
         rss: 'https://samsir.medium.com/feed'
     };
