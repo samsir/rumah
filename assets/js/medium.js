@@ -25,7 +25,7 @@ $(function () {
                 trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
                 display += `<p class="card-text">${trimmedString}...</p>`;
                 display += '</div></div></div></div>';
-                return k < 12;
+                return k < 10;
             });
 
             resolve($content.html(display));
