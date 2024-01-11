@@ -11,7 +11,6 @@
 {% if username contains "//" %}{% assign url = username %}{% else %}{% assign url = username | prepend:data_social.prepend | append:data_soical.append %}{% endif %}
 <li class="list-group-item">
   <a href="{{ url }}" class="text-decoration-none" target="_blank">
-    <span class="{{ data_social.icon  | default:'icon-link' }}" title="{{ data_social.name }}"></span>
-    {{ data_social.name }}
+    <span class="{{ data_social.icon  | default:'icon-link' }}" title="{{ data_social.name }}"></span>{{ data_social.name }}
   </a>
 </li>
