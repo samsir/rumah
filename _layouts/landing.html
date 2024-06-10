@@ -6,6 +6,35 @@
 {% include head.html %}
 <body class="d-flex align-items-center h-100">
   <main class="container" role="main">
+    
+    <div class="col-xs-12">
+      <div class="text-center" style="padding-top: 30px; padding-bottom: 30px;">
+        {% if author.picture %}<button type="button" class="btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume"><span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail" img=author.picture alt=author.name %}</span></button>{% endif %}
+        <h2 style="color: #ffffff; padding-top: 20px;">Instagram Growth Expert</h2>
+      </div>
+    </div>
+
+
+    <div class="col-xs-12">
+      <div class="text-center">
+          <div style="padding-bottom: 30px;">
+              <button onclick="location.href='http://bit.ly/2IZURI7'" type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">15% OFF Instagram Growth</button>
+          </div>
+          <div style="padding-bottom: 30px;">
+              <button onclick="location.href='http://bit.ly/2SVZXES'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Guide: Increasing Your Engagement</button>
+          </div>
+          <div style="padding-bottom: 30px;">
+              <button onclick="location.href='#'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">View My YouTube Channel</button>
+          </div>
+          <div style="padding-bottom: 30px;">
+              <button onclick="location.href='#'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Connect On LinkedIn</button>
+          </div>
+          <div style="padding-bottom: 30px;">
+              <button onclick="location.href='#'" type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">My Personal Website</button>
+          </div>
+      </div>>
+    </div>
+
     <section class="col-lg-5 col-sm-7 col-md-7 m-auto">
       <div class="card border-0">
         <div class="card-header border-0 bg-white pt-1">
