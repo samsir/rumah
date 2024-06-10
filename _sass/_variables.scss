@@ -3,37 +3,24 @@
 
 // Variables
 // ---
-body {
-  font-family: 'PT Sans', sans-serif;
-}
+body {font-family: 'PT Sans', sans-serif;}
 
 // Heading
 // ---
-h6, h5, h4, h3, h2, h1 {
-  font-family: 'Merriweather', serif;
-}
+h6, h5, h4, h3, h2, h1 {font-family: 'Merriweather', serif;}
 
 // A
 // ---
-a {
-  color: #14ac6cff;
-  text-decoration: none;
-}
+a {color: #14ac6cff;text-decoration: none;}
 
 // Bootstrap Overrides
 // ---
 .btn:focus,
 .btn.focus,
 .form-control:focus,
-.navbar-toggler:focus {
-  box-shadow: 0 0 black;
-}
+.navbar-toggler:focus {box-shadow: 0 0 black;}
 
-.btn-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-}
+.btn-circle {width: 40px;height: 40px;border-radius: 20px;}
 
 .tip{background-color: #263646;padding: 0 14px;line-height: 27px;position: absolute;border-radius: 4px;z-index: 100;color: #fff;font-size: 12px;animation-name: tip;animation-duration: .6s;animation-fill-mode: both}
 .tip:before{content: "";background-color: #263646;height: 10px;width: 10px;display: block;position: absolute;transform: rotate(45deg);top: -4px;left: 17px}
