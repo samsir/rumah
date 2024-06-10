@@ -9,20 +9,20 @@
     
     <article class="col-sm-5 m-auto">
       <div class="text-center">
-        <header class="mx-2">
+        <header class="my-2">
         {% if author.picture %}<button type="button" class="col-4 btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume"><span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail rounded-circle" img=author.picture alt=author.name %}</span></button>{% endif %}
         <h2 class="pt-2">{{ site.title }}</h2>
 
         <a href="//about.me/samsiralam" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="about.me/samsiralam">About.me</a>
         <i class="bi bi-box-arrow-up-right"></i>
       </header>
-      <section class="mx-3">
+      <section class="my-3">
       {% if author.social %}
       <!-- Social links -->
       {% include components/social.html social=author.social %}
       {% endif %}
       </section>
-      <footer class="mx-2">
+      <footer class="my-2">
       {% include menu.html %}
       </footer>
     </div>
