@@ -10,7 +10,7 @@
 
 {% if username contains "//" %}{% assign url = username %}{% else %}{% assign url = username | prepend:data_social.prepend | append:data_soical.append %}{% endif %}
 <div class="btn-group col-12">
-  <button type="button" onclick="location.href='{{ url }}'" class="col-3 m-2 btn btn-dark btn-lg">
-    <i class="col-9 float-start me-1 {{ data_social.icon  | default:'icon-link' }}" title="{{ data_social.name }}"></i>{{ data_social.name }}
+  <button type="button" onclick="location.href='{{ url }}'" class="btn btn-dark btn-lg">
+    <i class="float-start me-1 {{ data_social.icon  | default:'icon-link' }}" title="{{ data_social.name }}"></i>{{ data_social.name }}
   </button>
 </div>
