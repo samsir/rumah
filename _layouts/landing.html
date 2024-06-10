@@ -13,23 +13,15 @@
         <h2 style="padding-top: 20px;">samsiral.am</h2>
       </div>
     </section>
-
-
+    
     <section class="col-xs-12 m-auto">
       <div class="text-center">
-          <div style="padding-bottom: 30px;">
-              <button onclick="location.href='https://samsir.medium.com/'" type="button" class="btn btn-dark">Medium</button>
-          </div>
-          <div style="padding-bottom: 30px;">
-              <button onclick="location.href='https://www.linkedin.com/in/samsiralam/'" type="button" class="btn btn-dark">Linkedin</button>
-          </div>
-          <div style="padding-bottom: 30px;">
-              <button onclick="location.href='https://open.spotify.com/user/samsiralam'" type="button" class="btn btn-dark">Connect On Spotify</button>
-          </div>
-          <div style="padding-bottom: 30px;">
-              <button onclick="location.href='https://www.instagram.com/samsiral_am/'" type="button" class="btn btn-dark">Instgram</button>
-          </div>
-      </div>
+        <a href="//about.me/samsiralam" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="about.me/samsiralam">{{ site.title }}</a>
+        <i class="bi bi-box-arrow-up-right"></i>
+      {% if author.social %}
+      <!-- Social links -->
+      <div class="nav">{% include components/social.html social=author.social %}
+      </div>{% endif %}
     </section>
 
               <!-- Modal -->
@@ -47,38 +39,26 @@
                 </div>
               </div>
 
-<!--
-  Navigation Menu
--->
-<nav class="navbar navbar-expand d-flex" role="navigation">
-  <ul class="navbar-nav">{% for entry in site.data.menu %}{% if entry.url == current_page %}{% assign current = ' class="nav-item active"' %}{% else %}
-      <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-      {% assign current = null %}{% endif %}{% assign sublinks = entry.sublinks %}{% if sublinks %}
-      <li class="nav-item dropdown">
-          <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}
-              <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">{% for sublink in sublinks %}
-              <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>{% endfor %}
-          </div>
-      </li>{% else %}
-      <li{{ current }}>
-          <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-      </li>{% endif %}{% endfor %}
-  </ul>
-</nav>
-            <div class="col-md-7">
-                    <td class="border-0"><a href="//about.me/samsiralam" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="about.me/samsiralam">{{ site.title }}</a>
-                      <i class="bi bi-box-arrow-up-right"></i></td>
-                    <td class="border-0">{% if author.social %}
-                      <!-- Social links -->
-                      <div class="nav">{% include components/social.html social=author.social %}
-                      </div>{% endif %}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+  <!--
+    Navigation Menu
+  -->
+  <nav class="navbar navbar-expand d-flex" role="navigation">
+    <ul class="navbar-nav">{% for entry in site.data.menu %}{% if entry.url == current_page %}{% assign current = ' class="nav-item active"' %}{% else %}
+        <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+        {% assign current = null %}{% endif %}{% assign sublinks = entry.sublinks %}{% if sublinks %}
+        <li class="nav-item dropdown">
+            <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}
+                <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">{% for sublink in sublinks %}
+                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>{% endfor %}
             </div>
+        </li>{% else %}
+        <li{{ current }}>
+            <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+        </li>{% endif %}{% endfor %}
+    </ul>
+  </nav>
   </main>
   <!-- /.container -->
   <script>
