@@ -7,11 +7,11 @@
 <body class="d-flex align-items-center h-100">
   <main class="container" role="main">
     
-    <article class="col-sm-5 m-auto">
-      <div class="3dot float-end">
-        <button type="button" class="btn btn-dark btn-circle" data-bs-placement="top"><span data-bs-toggle="modal" data-bs-target="#shareModal"><i class="bi bi-three-dots"></i></span></button></div>
-      <div class="text-center">
-        <header class="my-2">
+  <article class="col-sm-5 m-auto">
+    <div class="3dot float-end">
+      <button type="button" class="btn btn-dark btn-circle" data-bs-placement="top"><span data-bs-toggle="modal" data-bs-target="#shareModal"><i class="bi bi-three-dots"></i></span></button></div>
+    <div class="text-center">
+      <header class="my-2">
         {% if author.picture %}<button type="button" class="col-3 btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume"><span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail rounded-circle border-o" img=author.picture alt=author.name %}</span></button>{% endif %}
         <h2 class="pt-2">{{ site.title }}</h2>
 
@@ -49,11 +49,18 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="shareModalLabel">Share this</h1>
+            <h1 class="modal-title fs-3" id="shareModalLabel">Share this</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="{{ site.baseurl }}/assets/img/cv.png" class="img-fluid" />
+            <div class="card">
+              <div class="card-body">
+                <a href="#" class="btn btn-primary">Facebook</a>
+                <a href="#" class="btn btn-primary">X</a>
+                <a href="#" class="btn btn-primary">Whatsapp</a>
+                <a href="#" class="btn btn-primary">Link</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
