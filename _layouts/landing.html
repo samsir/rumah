@@ -8,7 +8,8 @@
   <main class="container" role="main">
     
     <article class="col-sm-5 m-auto">
-      <div class="3dot foat-right"><i class="fa-solid fa-ellipsis"></i></div>
+      <div class="3dot float-end">
+        <button type="button" class="btn btn-dark rounded-circle" data-bs-placement="top"><span data-bs-toggle="modal" data-bs-target="#shareModal"><i class="bi bi-three-dots"></i></span></button></div>
       <div class="text-center">
         <header class="my-2">
         {% if author.picture %}<button type="button" class="col-3 btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume"><span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail rounded-circle border-o" img=author.picture alt=author.name %}</span></button>{% endif %}
