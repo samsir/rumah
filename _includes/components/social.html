@@ -1,5 +1,5 @@
-<ul class="list-group list-group-flush">
+<nav class="nav flex-column">
   {% for link in include.social %}
   {% include components/social-list.html platform=link.first username=link.last %}
   {% endfor %}
-</ul>
+</nav>
