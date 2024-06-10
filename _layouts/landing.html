@@ -21,46 +21,28 @@
       </div>
     </section>
 
-              <!-- Modal -->
-              <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="cvModalLabel">Resume</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <img src="{{ site.baseurl }}/assets/img/cv.png" class="img-fluid" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+{% include menu.html %}
 
-  <!--
-    Navigation Menu
-  -->
-  <nav class="navbar navbar-expand d-flex" role="navigation">
-    <ul class="navbar-nav">{% for entry in site.data.menu %}{% if entry.url == current_page %}{% assign current = ' class="nav-item active"' %}{% else %}
-        <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
-        {% assign current = null %}{% endif %}{% assign sublinks = entry.sublinks %}{% if sublinks %}
-        <li class="nav-item dropdown">
-            <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}
-                <a id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-caret-down-fill"></i></a>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">{% for sublink in sublinks %}
-                <a class="dropdown-item" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>{% endfor %}
-            </div>
-        </li>{% else %}
-        <li{{ current }}>
-            <a class="nav-link d-inline" href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-        </li>{% endif %}{% endfor %}
-    </ul>
-  </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="cvModalLabel">Resume</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="{{ site.baseurl }}/assets/img/cv.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
   <!-- /.container -->
   <script>
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))    </script>
-  </body>
+</body>
 
 </html>
