@@ -12,7 +12,7 @@
       <button type="button" class="btn btn-dark btn-circle" data-bs-placement="top"><span data-bs-toggle="modal" data-bs-target="#shareModal"><i class="bi bi-three-dots"></i></span></button></div>
     <div class="text-center">
       <header class="my-2">
-        {% if author.picture %}<button type="button" class="col-3 btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume"><span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail rounded-circle border-0" img=author.picture alt=author.name %}</span></button>{% endif %}
+        {% if author.picture %}<button type="button" class="col-5 col-sm-6 col-md-5 col-lg-4 btn btn-link" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to see my resume"><span data-bs-toggle="modal" data-bs-target="#cvModal">{% include components/srcset-img.html class="img-thumbnail rounded-circle border-0" img=author.picture alt=author.name %}</span></button>{% endif %}
         <h2 class="pt-2">{{ site.title }}</h2>
 
         <a href="//about.me/samsiralam" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="about.me/samsiralam">About.me</a>
