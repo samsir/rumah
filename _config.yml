@@ -54,7 +54,6 @@ collections:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-redirect-form
 
 # Minified stylesheet
 sass:
