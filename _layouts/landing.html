@@ -69,12 +69,13 @@
                 Share via WhatsApp
                 <i class="float-end bi bi-chevron-right" style="color: #222222;"></i>
               </a>
-              <button onclick="copy('samsiral.am','#copy_button_1')" id="copy_button_1" class="btn btn-light">
+
+              <button onclick="copy('samsiral.am','')" class="btn btn-light">
                 <span class="float-start">
-                  <img src="{{ site.brand }}" alt="{{ site.title }}" loading="lazy" class="btn-circle me-2"> https://samsiral.am
+                  <img src="https://samsiral.am/favicon.ico" alt="samsiral.am" loading="lazy" class="btn-circle me-2"> https://samsiral.am
                 </span>
-                <span id="copyBtn" class="float-end pt-2">
-                  Copy
+                <span class="float-end pt-2">
+                <input id="copyBtn" type="button" value="Copy Simple Text to Clipboard">
                 </span>
               </button>
             </nav>
@@ -89,7 +90,7 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-$("#copyButton").on("click", function(){
+$("#copyBtn").on("click", function(){
 	copyText("https://samsiral.am/");
 });
 
