@@ -74,7 +74,7 @@
     <img src="{{ site.brand }}" alt="{{ site.title }}" loading="lazy" class="btn-circle me-2"> https://samsiral.am
   </span>
   <span class="float-end pt-2">
-  <input id="copyBtn" type="button" value="Copy Simple Text to Clipboard">
+  <input id="copyBtn" type="button" value="Copy">
   </span>
 </button>
 
@@ -90,7 +90,7 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-$("#copyButton").on("click", function(){
+$("#copyBtn").on("click", function(){
 	copyText("https://samsiral.am/");
 });
 
