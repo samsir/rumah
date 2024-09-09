@@ -69,9 +69,9 @@
                 Share via WhatsApp
                 <i class="float-end bi bi-chevron-right" style="color: #222222;"></i>
               </a>
-              <button id="btn_copy" data-clipboard-text="https://samsiral.am">
+              <button class="btn" id="btn_copy" data-clipboard-text="https://samsiral.am">
                 Copy
-            </button>
+              </button>
             </nav>
           </div>
         </div>
@@ -84,7 +84,7 @@
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-  new ClipboardJS("#btn_copy");
+  new ClipboardJS(".btn");
   </script>
 </body>
 
