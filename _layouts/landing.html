@@ -69,8 +69,8 @@
                 Share via WhatsApp
                 <i class="float-end bi bi-chevron-right" style="color: #222222;"></i>
               </a>
-              <button class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js">
-                Copy to clipboard
+              <button id="btn_copy" data-clipboard-text="https://samsiral.am">
+                Copy
             </button>
             </nav>
           </div>
@@ -83,6 +83,8 @@
   <script>
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+  new ClipboardJS("#btn_copy");
   </script>
 </body>
 
