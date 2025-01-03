@@ -8,11 +8,11 @@ author:
   name: Samsir
 
 # Fallback image and color
-image:  /assets/img/brand.png
+image:  https://samsir.github.io/rumah/assets/img/brand.png
 color:  '#14ac6c'
 
 # Site Brand
-brand: /assets/img/brand.svg
+brand: https://samsir.github.io/rumah/assets/img/brand.svg
 
 # Set your Google Analytics id to receive `pageview` events.
 # google_analytics: 
