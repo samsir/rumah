@@ -1,7 +1,7 @@
 # User configuration
 title:  Samsir
 description:  > # this means to ignore newlines until "baseurl:"
-url:  https://samsir.github.io/rumah # the base hostname & protocol for your site
+url:  https://samsir.github.io/rumah/ # the base hostname & protocol for your site
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
