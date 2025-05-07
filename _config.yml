@@ -1,18 +1,18 @@
 # User configuration
 title:  Samsir
 description:  > # this means to ignore newlines until "baseurl:"
-url:  https://samsir.github.io/rumah # the base hostname & protocol for your site
+url:  samsiralam.id # the base hostname & protocol for your site
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name: Samsir
 
 # Fallback image and color
-image:  https://samsir.github.io/rumah/assets/img/brand.png
+image:  /assets/img/brand.png
 color:  '#14ac6c'
 
 # Site Brand
-brand: https://samsir.github.io/rumah/assets/img/brand.svg
+brand: /assets/img/brand.svg
 
 # Set your Google Analytics id to receive `pageview` events.
 # google_analytics: 
